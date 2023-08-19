@@ -154,14 +154,18 @@
     width: 550px;
     height: auto;
     opacity: 60%;
-    transition: transform 1800ms ease-in-out;
-    transition-delay: 0.1s;
+    transition: all 0.9s ease-in-out;
     filter: drop-shadow(10px 10px 10px aqua);
   }
   
   #ImagemCentral:hover {
-    transform: translatex(20px) translatey(-10px) rotate(2.5deg);
-    filter: drop-shadow(11px 11px 11px)
+    scale: 1.1;
+    filter: drop-shadow(11px 11px 11px);
+
+  }
+
+  #ImagemCentral:active{
+    scale: 0.9
   }
   
   #SetaBaixo {
@@ -263,13 +267,16 @@
       right: 9%;
     }
     #EfeitoEscrevendo {
-      width: 25ch;
+      width: 27ch;
     }
   }
   
-  @media (max-width: 1460px) {
+  @media (max-width: 1500px) {
     section {
       padding: 0 12%;
+    }
+    #EfeitoEscrevendo {
+      width: 18ch;
     }
   }
   
