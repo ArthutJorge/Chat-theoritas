@@ -67,7 +67,6 @@
   
   #IconeMenu {
     width: 50px;
-    height: auto;
     z-index: 10001;
     cursor: pointer;
     display: none;
@@ -152,7 +151,6 @@
   
   #ImagemCentral {
     width: 550px;
-    height: auto;
     opacity: 60%;
     transition: all 0.9s ease-in-out;
     filter: drop-shadow(10px 10px 10px aqua);
@@ -189,7 +187,6 @@
   
   #SetaBaixo img {
     width: 25px;
-    height: auto;
   }
 
   .Traição {
@@ -283,7 +280,6 @@
   @media (max-width: 1340px) {
     #ImagemCentral {
       width: 510px;
-      height: auto;
     }
     #Texto h1,
     #Texto2 h1 {
@@ -310,7 +306,6 @@
     #ImagemCentral {
       text-align: center;
       width: 380px;
-      height: auto;
     }
     .Central {
       display: grid;
@@ -356,7 +351,6 @@
   @media (max-width: 880px) {
     #ImagemCentral {
       width: 210px;
-      height: auto;
     }
     #Texto h1,
     #Texto2 h1 {
@@ -373,7 +367,6 @@
   @media (max-width: 480px) {
     #ImagemCentral {
       width: 350px;
-      height: auto;
     }
     #Texto h1,
     #Texto2 h1 {
@@ -412,7 +405,6 @@
   @media (max-width: 400px) {
     #ImagemCentral {
       width: 300px;
-      height: auto;
       left: 0;
     }
     #Texto,
@@ -450,6 +442,9 @@
   }
   
   @media (max-width: 300px) {
+    #ImagemCentral {
+      width: 200px;
+    }
     #Texto2 a {
       width: 260px;
     }
@@ -461,7 +456,6 @@
   @media (min-width: 1200px) and (max-height: 800px) {
     #ImagemCentral {
       width: 500px;
-      height: auto;
     }
     #Texto h1,
     #Texto2 h1 {
@@ -477,7 +471,6 @@
   @media (max-width: 1100px) and (max-height: 550px) {
     #ImagemCentral {
       width: 270px;
-      height: auto;
     }
     #Texto h1,
     #Texto2 h1 {
@@ -492,7 +485,6 @@
   @media (max-width: 920px) and (max-height: 420px) {
     #ImagemCentral {
       width: 280px;
-      height: auto;
     }
     #Texto h1,
     #Texto2 h1 {
@@ -524,7 +516,6 @@
   @media (max-width: 950px) and (min-height: 1000px) {
     #ImagemCentral {
       width: 400px;
-      height: auto;
     }
     #Ordo {
       margin-left: -35px;
@@ -545,7 +536,6 @@
   @media (max-width: 700px) and (max-height: 420px) {
     #ImagemCentral {
       width: 200px;
-      height: auto;
     }
     #Texto h1,
     #Texto2 h1 {
