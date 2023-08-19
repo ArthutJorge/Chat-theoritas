@@ -304,7 +304,9 @@
     #Texto2 p {
       width: 300px;
     }
-  
+    #EfeitoEscrevendo {
+      width: 26.5ch;
+    }
     #ImagemCentral {
       text-align: center;
       width: 380px;
@@ -501,7 +503,7 @@
       padding-top: 0px;
       width: 250px;
     }
-    #Texto img {
+    #disc {
       width: 30px;
     }
     #Texto a,
@@ -516,6 +518,27 @@
     .Central {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 950px) and (min-height: 1000px) {
+    #ImagemCentral {
+      width: 400px;
+      height: auto;
+    }
+    #Ordo {
+      margin-left: -35px;
+    }
+    #Texto h1,
+    #Texto2 h1 {
+      font-size: 50px;
+    }
+    #Texto,
+    #Texto2 {
+      width: 350px;
+    }
+    #EfeitoEscrevendo {
+      width: 21.5ch;
     }
   }
   
