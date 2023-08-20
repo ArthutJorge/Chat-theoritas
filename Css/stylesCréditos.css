@@ -10,13 +10,14 @@
     list-style: none;
     text-decoration: none;
     font-family: retropix; font-size: 15px;
+    text-align: center;
   }
   
   html,
   body {
     scroll-behavior: smooth;
     cursor: url("../Images/Cursor.png"), auto;
-    background: rgb(211, 255, 255);
+    background: #1a8283;
   }
   
   header {
@@ -36,7 +37,11 @@
   
   Section {
     padding: 0 18%;
-    border: 0.1px solid rgb(255, 255, 255, 0.1);
+  }
+
+  h1 {
+    font-size: 100px;
+    margin-top: 100px;
   }
   
   a:hover, button, .Projeto {
@@ -75,16 +80,20 @@
     cursor: pointer;
     display: none;
   }
+
+
   
-  .Central {
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+  .Escritores, .Programadores {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 
   }
+
+  #play {
+    font-size: 30px;
+    text-align: start;
+  }
+
 
   
   #EfeitoEscrevendo {
@@ -124,61 +133,136 @@
     border-radius: 10px;
   }
 
-  .Central {
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-  }
-
   table, th {
-    border: 1px solid black;
-    border-width: 5px;
-    border-style: double;
-
+    border: 1px solid white;
+    border-width: 4px;
+    box-shadow: 2px 2px 2px black;
     border-collapse: collapse;
     background-color: white;
     text-align: center;
     font-size: 25px;
   }
 
-  #Escritores, .tabelaExteriorEscritores {
-    background-color: #b6e3f9;
+
+  #info {
+    background-color: black;
+    height: 100px;
+    color: white;
   }
 
-  #Programadores, .tabelaExteriorProgramadores {
-    background-color: #ffa794;
+  #comandos td {
+    text-align: left;
+    padding: 10px;
   }
+
+  td {
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+
 
   .tabela {
-    width: 80%;
     margin: auto;
+    margin-top: 20px;
+    width: 10%;
   }
 
-  .tabela img {
-    width: 5%;
+  img {
+    width: 100%;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  #SasaGato:hover + #sasa {
+    display: table;
+    position: absolute;
+    margin-left: 12%; 
+  }
+
+  #ZeroGato:hover + #zero_{
+    display: table;
+    position: absolute;
+    margin-left: 25%; 
+  }
+
+  #MaluGato:hover + #Malu{
+    display: table;
+    position: absolute;
+    margin-left: 38%;
+  }
+
+  #DaraGato:hover + #Dara{
+    display: table;
+    position: absolute;
+    margin-left: 50%;
+  }
+
+  #CheesGato:hover + #Cheese{
+    display: table;
+    position: absolute;
+    margin-left: 32%;
+  }
+
+  #AstalisGato:hover + #Astalis{
+    display: table;
+    position: absolute;
+    margin-left: 12%;
+  }
+
+  #RoninGato:hover + #Ronin{
+    display: table;
+    position: absolute;
+    margin-left: 24%;
+  }
+
+  #sasa, #zero_, #Malu, #Dara, #Cheese, #Ronin, #Astalis {
+    display: none;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  #Escritores {
+    background: linear-gradient(0.25turn, rgb(46, 14, 131),rgb(69, 75, 255));
+    color: white;
+    border-right: none;
+    text-align: start;
+    padding-left: 15px;
+  }
+
+  #botões {
+    background: linear-gradient(0.25turn, rgb(69, 75, 255),rgb(107, 112, 255));
+    border-left: none;
+    white-space: nowrap;
+  }
+  #Botões button {
+    width: 20px;
+    margin-bottom: 4px;
   }
   
-  @media (max-width: 1195px) {
-    .Central {
-      display: block;
-      grid-template-columns: repeat(2, 1fr);
-      margin-top: 200px !important;
+  @media (max-width: 1550px){
+    .tabela {
+      scale: 0.9;
+    }
+    #DaraGato:hover + #Dara, #RoninGato:hover + #Ronin, #AstalisGato:hover + #Astalis, #CheesGato:hover + #Cheese, #MaluGato:hover + #Malu,
+    #ZeroGato:hover + #zero_, #SasaGato:hover + #sasa{
+      margin-top: -1%;
     }
   }
+
   
   @media (max-width: 990px) {
+    #play {
+      font-size: 20px;
+    }
+    .tabela {
+      margin-left: 0;
+    }
     #IconeMenu {
       display: block;
       
     }
-    .Central {
-        margin-top: 100px;
-      }
-
     .ListaVertical {
       position: absolute;
       top: 100%;
@@ -208,9 +292,45 @@
       border-radius: 30px;
       border: solid 2px white;
       filter: drop-shadow(5px 5px 10px white);
-      
+    .Escritores{
+      margin-top: 0;
+    }
+    }
+    h1 {
+      font-size: 45px;
+    }
+    .Escritores, .Programadores {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
     .tabela {
-        margin-top: 20px;
+      scale: 0.6
+    }
+    #SasaGato:hover + #sasa {
+      margin-left: 14%;  margin-top: -12%;
+    }
+  
+    #ZeroGato:hover + #zero_{
+      margin-left: -25%;  margin-top: -12%;
+    }
+  
+    #MaluGato:hover + #Malu{
+      margin-left: 14%; margin-top: 20%;
+    }
+  
+    #DaraGato:hover + #Dara{
+      margin-left: -25%; margin-top: 20%;
+    }
+  
+    #CheesGato:hover + #Cheese{
+      margin-left: 14%; margin-top: 50%;
+    }
+  
+    #AstalisGato:hover + #Astalis{
+      margin-left: 14%; margin-top: -12%;
+    }
+  
+    #RoninGato:hover + #Ronin{
+      margin-left: -25%; margin-top: -12%;
     }
   }
