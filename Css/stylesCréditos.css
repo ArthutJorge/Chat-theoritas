@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'retropix';
+    src: url('../Fonts/retropix.woff2') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: retropix; font-size: 15px;
+  }
+  
+  html,
+  body {
+    scroll-behavior: smooth;
+    cursor: url("../Images/Cursor.png"), auto;
+    background: rgb(211, 255, 255);
+  }
+  
+  header {
+    backdrop-filter: blur(4px);
+    background-color: rgb(33, 30, 30, 0.3);
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border: solid 1px white;
+  }
+  
+  Section {
+    padding: 0 18%;
+    border: 0.1px solid rgb(255, 255, 255, 0.1);
+  }
+  
+  a:hover, button, .Projeto {
+    cursor: url("../Images/CursorPointer.png"), pointer;
+  }
+  
+  .ListaVertical {
+    display: flex;
+  }
+  
+  .ListaVertical a {
+    font-size: 20px;
+    color: white;
+    margin-left: 50px;
+    font-weight: 700;
+    transition: all 0.55s ease-in-out;
+    border-bottom: transparent;
+    justify-content: center;
+  }
+  
+  
+  .ListaVertical a:hover {
+    border-bottom: 2px solid white;
+    background-color: rgba(66, 62, 62, 0.5);
+  }
+  
+  .Principal {
+    font-size: 30px;
+    font-weight: 1000;
+    color: white;
+  }
+  
+  #IconeMenu {
+    width: 50px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .Central {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+  }
+
+  
+  #EfeitoEscrevendo {
+    width: 18ch;
+    animation: Escrever 2s steps(37), effect 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid aqua;
+    font-size: 2em;
+  }
+  
+  @keyframes Escrever {
+    from {
+      width: 0;
+    }
+  }
+  
+  @keyframes effect {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px white;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+
+  .Central {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  table, th {
+    border: 1px solid black;
+    border-width: 5px;
+    border-style: double;
+
+    border-collapse: collapse;
+    background-color: white;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  #Escritores, .tabelaExteriorEscritores {
+    background-color: #b6e3f9;
+  }
+
+  #Programadores, .tabelaExteriorProgramadores {
+    background-color: #ffa794;
+  }
+
+  .tabela {
+    width: 80%;
+    margin: auto;
+  }
+
+  .tabela img {
+    width: 5%;
+  }
+  
+  @media (max-width: 1195px) {
+    .Central {
+      display: block;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 200px !important;
+    }
+  }
+  
+  @media (max-width: 990px) {
+    #IconeMenu {
+      display: block;
+      
+    }
+    .Central {
+        margin-top: 100px;
+      }
+
+    .ListaVertical {
+      position: absolute;
+      top: 100%;
+      right: -120%;
+      width: 300px;
+      height: 40vh;
+      display: flex;
+      padding: 50px 20px;
+      flex-direction: column;
+      align-items: center;
+      background: rgb(73, 73, 73);
+      transition: all 0.55s ease;
+      
+    }
+    .ListaVertical a,
+    .ListaVertical button {
+      margin-left: 0;
+      display: block;
+      margin: 5px 0;
+      font-size: 21px;
+      margin-top: 0;
+    }
+    .ListaVertical.open {
+      right: 0;
+      height: 240px;
+      width: 200px;
+      border-radius: 30px;
+      border: solid 2px white;
+      filter: drop-shadow(5px 5px 10px white);
+      
+    }
+    .tabela {
+        margin-top: 20px;
+    }
+  }
