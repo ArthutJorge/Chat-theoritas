@@ -1,0 +1,19 @@
+
+.bg{
+  border: rgb(255, 255, 255);
+  background-color: #1A1A1A;
+}
+/*
+.loader_bg {
+  position: fixed;
+  z-index: 99999;
+  background: #7a2121;
+  width: 100%;
+  height: 100%;
+}
+
+.loader{
+    border: 0 solid transparent;
+    border-radius: 50%;
+}
+*/
