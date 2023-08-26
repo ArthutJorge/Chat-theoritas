@@ -63,8 +63,31 @@ h1 {
   color: white;
   text-align: center;
 }
-#conteudo1{
-  
+.card{
+  margin-left: 20px !important;
+  width: 1000px !important;
+  height: 520px !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("../Images/next.png");
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../Images/prev.png");
+}
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: 1 !important;
+  width: 5%;
+}
+
+.carousel-control-next{
+  right: 10%
+}
+
+.carousel-control-prev{
+  left: 10%;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=VT323&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
