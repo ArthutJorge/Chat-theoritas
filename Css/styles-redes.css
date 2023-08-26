@@ -1,0 +1,70 @@
+
+.bg{
+  font-size: 35px;
+  font-family: 'VT323', monospace;
+  border: rgb(255, 255, 255);
+  background-color: #1A1A1A;
+}
+/*
+.loader_bg {
+  position: fixed;
+  z-index: 99999;
+  background: #7a2121;
+  width: 100%;
+  height: 100%;
+}
+
+.loader{
+    border: 0 solid transparent;
+    border-radius: 50%;
+}
+*/
+
+
+/* NAV BAR */
+
+a:link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+a:hover
+{
+  color: red;
+}
+
+.nav-item{
+  margin: 125px 50px;
+}
+
+/* CONTEUDO */
+
+.container-fluid{
+}
+
+.horizontal_esquerdo {
+  padding-top: 600px;
+  border-left: 10px dashed rgb(248, 248, 248);
+  border-bottom: 10px dashed rgb(255, 255, 255);
+  border-top: 10px dashed rgb(255, 255, 255);
+  width: 100%;
+  margin: 35px 0px;
+}
+.horizontal_direito{
+  padding-top: 600px;
+  border-right: 10px dashed rgb(255, 255, 255);
+  border-bottom: 10px dashed rgb(255, 255, 255);
+  border-top: 10px dashed rgb(255, 255, 255);
+  width: 100%;
+  margin: 35px 0px;
+}
+
+h1 {
+  font-size: 60px;
+  color: white;
+  text-align: center;
+}
+#conteudo1{
+  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=VT323&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
