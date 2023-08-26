@@ -1,5 +1,7 @@
 
 .bg{
+  font-size: 35px;
+  font-family: 'VT323', monospace;
   border: rgb(255, 255, 255);
   background-color: #1A1A1A;
 }
@@ -21,6 +23,33 @@
 
 /* NAV BAR */
 
-.nav-item{
-  margin: 0px 50px;
+a:link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
+a:hover
+{
+  color: red;
+}
+.horizontal_esquerdo {
+  padding-top: 600px;
+  border-left: 10px dashed rgb(248, 248, 248);
+  border-bottom: 10px dashed rgb(255, 255, 255);
+  border-top: 10px dashed rgb(255, 255, 255);
+  width: 10%;
+}
+.horizontal_direito{
+
+  
+  padding-top: 600px;
+  border-right: 10px dashed rgb(255, 255, 255);
+  border-bottom: 10px dashed rgb(255, 255, 255);
+  border-top: 10px dashed rgb(255, 255, 255);
+  width: 10%;
+
+}
+.nav-item{
+  margin: 125px 50px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=VT323&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
