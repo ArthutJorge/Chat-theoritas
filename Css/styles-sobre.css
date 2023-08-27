@@ -42,12 +42,13 @@ a:hover
 }
 
 .horizontal_esquerdo {
-  padding-top: 600px;
+  height: 600px;
   border-left: 10px dashed rgb(248, 248, 248);
   border-bottom: 10px dashed rgb(255, 255, 255);
   border-top: 10px dashed rgb(255, 255, 255);
-  width: 100%;
+  width: 30%;
   margin: 35px 0px;
+  position: absolute;
 }
 .horizontal_direito{
   padding-top: 600px;

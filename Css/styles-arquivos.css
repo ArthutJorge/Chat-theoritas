@@ -5,10 +5,6 @@
   border: rgb(255, 255, 255);
   background-color: #1A1A1A;
 }
-
-body {
-  margin-bottom: 150px;
-}
 /*
 .loader_bg {
   position: fixed;
@@ -36,38 +32,11 @@ a:hover
   color: red;
 }
 
+
+
 .nav-item{
   margin: 125px 50px;
 }
-
-/* CONTEUDO */
-
-.horizontal_esquerdo {
-  height: 700px;
-  border-left: 10px dashed rgb(248, 248, 248);
-  border-bottom: 10px dashed rgb(255, 255, 255);
-  border-top: 10px dashed rgb(255, 255, 255);
-  width: 10%;
-  margin: 35px 0px;
-  position: absolute;
-}
-  .horizontal_direito{
-  height: 700px;
-  width: 10%;
-  border-right: 10px dashed rgb(255, 255, 255);
-  border-bottom: 10px dashed rgb(255, 255, 255);
-  border-top: 10px dashed rgb(255, 255, 255);
-  margin: 35px 0px;
-  position: absolute;
-  right: 90px;
-}
-
-h1 {
-  font-size: 60px;
-  color: white;
-  text-align: center;
-}
-
 /* ARCOS */
 
 .arcos-idioma{
@@ -83,11 +52,8 @@ h1 {
   list-style-type: none;
   display: flex;
   padding: 20%;
+  padding-top: 10%;
   position: absolute;
-}
-
-#arcos-h1{
-  margin: 20%;
 }
 
 .idioma-img{
@@ -96,6 +62,35 @@ h1 {
   margin: 10px 0px;
   margin-right: 10px;
 }
+
+/* CONTEUDO */
+
+.horizontal_esquerdo {
+  height: 700px;
+  border-left: 10px dashed rgb(248, 248, 248);
+  border-bottom: 10px dashed rgb(255, 255, 255);
+  border-top: 10px dashed rgb(255, 255, 255);
+  width: 30%;
+  margin: 35px 0px;
+  position: absolute;
+}
+  .horizontal_direito{
+  height: 700px;
+  width: 108%;
+  border-right: 10px dashed rgb(255, 255, 255);
+  border-bottom: 10px dashed rgb(255, 255, 255);
+  border-top: 10px dashed rgb(255, 255, 255);
+  margin: 35px 0px;
+  right: 90px;
+  position: inherit;
+}
+
+h1 {
+  font-size: 60px;
+  color: white;
+  text-align: center;
+}
+
 
 /* FOOTER */
 
