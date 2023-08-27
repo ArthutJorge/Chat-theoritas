@@ -23,6 +23,9 @@
 
 /* NAV BAR */
 
+a{
+  color: white;
+}
 a:link {
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -30,6 +33,10 @@ a:link {
 a:hover
 {
   color: red;
+}
+
+a:hover::after{
+  color: white;
 }
 
 .nav-item{
