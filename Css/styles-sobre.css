@@ -5,6 +5,11 @@
   border: rgb(255, 255, 255);
   background-color: #1A1A1A;
 }
+
+p{
+  color: white;
+  margin-left: 15px;
+}
 /*
 .loader_bg {
   position: fixed;
@@ -59,12 +64,14 @@ a:hover::after{
   position: absolute;
 }
 .horizontal_direito{
-  padding-top: 600px;
+  height: 600px;
   border-right: 10px dashed rgb(255, 255, 255);
   border-bottom: 10px dashed rgb(255, 255, 255);
   border-top: 10px dashed rgb(255, 255, 255);
-  width: 100%;
+  width: 30%;
   margin: 35px 0px;
+  right: 90px;
+  position: absolute;
 }
 
 h1 {
@@ -72,8 +79,33 @@ h1 {
   color: white;
   text-align: center;
 }
-#conteudo1{
-  
+
+
+/* sobre */
+
+.img-theoritas{
+  margin-top: 8%;
+}
+.vertical_cima{
+  border-right: 7px solid rgb(255, 255, 255);
+  border-left: 7px solid rgb(255, 255, 255);
+  border-top: 7px solid rgb(255, 255, 255);
+  height: 150px;
+  width:50%;
+  position: absolute;
+}
+.vertical_baixo{
+  border-right: 7px solid rgb(255, 255, 255);
+  border-left: 7px solid rgb(255, 255, 255);
+  border-bottom: 7px solid rgb(255, 255, 255);
+  height: 150px;
+  margin-top: 10%;
+  width:50%;
+  position: absolute;
 }
 
+.sobre{
+  width: 1000px !important;
+  display: flex;
+}
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=VT323&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
