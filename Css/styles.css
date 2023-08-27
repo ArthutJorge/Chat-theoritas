@@ -94,7 +94,7 @@ h1 {
 .carousel-control-next, .carousel-control-prev {
   opacity: 1 !important;
   width: 5%;
-  margin-top: 78%;
+  top: 30%;
 }
 
 .carousel-control-next{
