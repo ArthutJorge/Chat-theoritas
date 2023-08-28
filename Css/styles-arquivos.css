@@ -69,6 +69,8 @@ a:hover::after{
   margin-right: 10px;
 }
 
+
+
 /* CONTEUDO */
 
 .horizontal_esquerdo {
@@ -97,8 +99,70 @@ h1 {
   text-align: center;
 }
 
-
 /* FOOTER */
+
+.vertical_cima{
+  border-right: 7px solid rgb(255, 255, 255);
+  border-left: 7px solid rgb(255, 255, 255);
+  border-top: 7px solid rgb(255, 255, 255);
+  height: 100px;
+  margin: 5%;
+  left: 0;
+  margin-top: 0px;
+  width: -webkit-fill-available;
+  position: absolute;
+}
+.vertical_baixo{
+  border-right: 7px solid rgb(255, 255, 255);
+  border-left: 7px solid rgb(255, 255, 255);
+  border-bottom: 7px solid rgb(255, 255, 255);
+  height: 100px;
+  margin: 5%;
+  left: 0;
+  margin-top: 0px;
+  width: -webkit-fill-available;
+  position: absolute;
+}
+
+footer{
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socials li{
+    margin: 0 10px;
+}
+
+.footer-bottom{
+  width: 100%;
+    text-align: center;
+  padding: 20px;
+}
+
+.footer-bottom p{
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
 
 
 
