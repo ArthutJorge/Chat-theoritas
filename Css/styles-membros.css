@@ -48,17 +48,48 @@ a:hover::after{
 .cargo{
   padding: 0;
   color: white;
+  text-align: center;
 }
-.membros1, .membros2, .membros3, .membros4{
-  margin-right: 30%;
+
+.membros1{
+
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   display: flex;
+  align-items: center;
+  margin-left: 20%;
+  margin-right: 20%;
+} 
+.membros2{
+
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  align-items: center;
+} 
+.membros3{
+
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  align-items: center;
+} 
+.membros4{
+  right: 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .membros{
   list-style-type: none;
-  padding: 20%;
   padding-top: 10%;
-  position: absolute;
+}
+h2{
+  text-align: center;
 }
 
 /* CONTEUDO */
