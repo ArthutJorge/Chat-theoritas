@@ -1,6 +1,6 @@
 
 .bg{
-  font-size: 35px;
+  /* font-size: 35px; */
   font-family: 'VT323', monospace;
   border: rgb(255, 255, 255);
   background-color: #1A1A1A;
@@ -39,12 +39,40 @@ a:hover::after{
   color: white;
 }
 
-
-.nav-item{
-  margin: 100px 20px;
+#btnapear{
+  display: none;
 }
 
+.dropcolor{
+  background-color: #1A1A1A;
+}
+
+/* .nav-item{
+  margin: 100px 20px;
+} */
+
+/* .nav-item{
+  margin: 6rem 1rem;
+} */
+
 /* CONTEUDO */
+
+/* .horizontal_esquerdo {
+  padding-top: 37rem;
+  border-left: 10px dashed rgb(248, 248, 248);
+  border-bottom: 10px dashed rgb(255, 255, 255);
+  border-top: 10px dashed rgb(255, 255, 255);
+  margin: 35px 0px;
+}
+.horizontal_direito{
+  padding-top: 37rem;
+  border-right: 10px dashed rgb(255, 255, 255);
+  border-bottom: 10px dashed rgb(255, 255, 255);
+  border-top: 10px dashed rgb(255, 255, 255);
+  margin: 35px 0px;
+} */
+
+
 
 .horizontal_esquerdo {
   padding-top: 600px;
@@ -62,18 +90,30 @@ a:hover::after{
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 4rem;
   color: white;
   text-align: center;
 }
 
+/* h1 {
+  font-size: 60px;
+  color: white;
+  text-align: center;
+} */
+
 /* CARROSSEL */
 
 .card{
+  margin-left: 1rem !important;
+  width: 35rem !important;
+  height: 34rem !important;
+}
+
+/* .card{
   margin-left: 20px !important;
   width: 1000px !important;
   height: 520px !important;
-}
+} */
 
 .carousel-control-next-icon {
   background-image: url("../Images/next.png");
@@ -160,107 +200,148 @@ footer{
 
 /* TENTANDO FAZER RESPONSIVO */
 
-.container {
-  max-width: 1441px;
-  margin-top: 10%;
-  height: fit-content;
-  
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-
 
 /* xs */
-@media (min-width: 475px) {
-  .container {
-    max-width: 475px;
+@media screen and (max-width: 320px) {
+  .nav-item{
+    margin: 0.5rem 0.5rem;
+}
+  #nvbap{
+    display: none;
+  }
+
+  #btnapear{
+    
+    display: contents;
+  }
+
+  .iconnav{
+    height: 4rem;
+  }
+
+  .navbar-icon-texto{
+    font-size: 2.5rem;
+  }
+
+  .Lg-theorytas{
+    padding-right: 0.5rem;
+    height: 1000.5rem;
+  }
+
+  .btnsize{
+    height: 2rem;
+    margin: 0.5rem 0.5rem;
+  }
+
+  .btnonly{
+    position: relative;
+    float: right;
   }
 }
 
 /* sm */
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
+@media screen and (max-width: 375px) {
+  .nav-item{
+    margin: 0.5rem 0.5rem;
+}
+  #nvbap{
+    display: none;
+  }
+
+  #btnapear{
+    
+    display: contents;
+  }
+
+  .iconnav{
+    height: 4rem;
+  }
+
+  .navbar-icon-texto{
+    font-size: 2.5rem;
+  }
+
+  .Lg-theorytas{
+    padding-left: 0.4rem;
+    height: 15rem;
+  }
+
+  .btnsize{
+    height: 2rem;
+    margin: 0.5rem 0.5rem;
+  }
+
+  .btnonly{
+    position: relative;
+    float: right;
   }
 }
 
 /* md */
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
+@media screen and (max-width: 425px) {
+  .nav-item{
+    margin: 0.5rem 0.5rem;
+}
+  #nvbap{
+    display: none;
+  }
+
+  #btnapear{
+    
+    display: contents;
+  }
+
+  .iconnav{
+    height: 4rem;
+  }
+
+  .navbar-icon-texto{
+    font-size: 2.5rem;
+  }
+
+  .Lg-theorytas{
+    padding-left: 0.4rem;
+    height: 15rem;
+  }
+
+  .btnsize{
+    height: 2rem;
+    margin: 0.5rem 0.5rem;
+  }
+
+  .btnonly{
+    position: relative;
+    float: right;
   }
 }
 
 /* lg */
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
+
 
 /* xl */
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
+
 
 /* 2xl */
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
 
-.container {
-  max-width: 1536px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
+
+
 
 /* 2xl */
-@media (max-width: 1536px) {
-  .container {
-    max-width: 1280px;
-  }
-}
+
 
 /* xl */
-@media (max-width: 1280px) {
-  .container {
-    max-width: 1024px;
-  }
-}
+
 
 /* lg */
-@media (max-width: 1024px) {
-  .container {
-    max-width: 768px;
-  }
-}
+
 
 /* md */
-@media (max-width: 768px) {
-  .container {
-    max-width: 640px;
-  }
-}
+
 
 /* sm */
-@media (max-width: 640px) {
-  .container {
-    max-width: 475px;
-  }
-}
+
 
 /* xs */
-@media (max-width: 475px) {
-  .container {
-    width: 100%;
-  }
-}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=VT323&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
