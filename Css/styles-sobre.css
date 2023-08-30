@@ -25,6 +25,10 @@
   position: absolute;
 }
 
+.sobre p {
+  width: 80%;
+}
+
 /* sobre */
 
 .img-theoritas{
@@ -43,7 +47,6 @@
   border-left: 7px solid rgb(255, 255, 255);
   border-bottom: 7px solid rgb(255, 255, 255);
   height: 150px;
-  margin-top: 10%;
   width:50%;
   position: absolute;
 }

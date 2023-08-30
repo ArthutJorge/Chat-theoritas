@@ -1,9 +1,9 @@
  /* CONTEUDO */
   
-/*
+ /*
   .container-fluid{
   }
-*/
+  */
   
   .horizontal_esquerdo {
     height: 600px;
@@ -25,6 +25,11 @@
     position: absolute;
   }
   
+  .participe p {
+    width: 80%;
+  }
+  
+  
   /* participe */
   
   .img-theoritas{
@@ -43,7 +48,6 @@
     border-left: 7px solid rgb(255, 255, 255);
     border-bottom: 7px solid rgb(255, 255, 255);
     height: 150px;
-    margin-top: 10%;
     width:50%;
     position: absolute;
   }
@@ -51,5 +55,14 @@
   .participe{
     width: 1000px !important;
     display: flex;
+  }
+
+  #botões {
+    position: absolute;
+    right: 15%;
+  }
+
+  #botões button{
+    background-color: yellow;
   }
   
