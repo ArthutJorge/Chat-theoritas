@@ -59,6 +59,10 @@
   height: 34rem !important;
 }
 
+.card p {
+  color: black !important;
+}
+
 /* .card{
   margin-left: 20px !important;
   width: 1000px !important;
