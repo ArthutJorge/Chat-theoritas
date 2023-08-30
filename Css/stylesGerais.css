@@ -25,7 +25,7 @@
 
 /* NAV BAR */
 a{
-  color: white;
+  color: white !important;
 }
 a:link {
   text-decoration: none;
@@ -33,7 +33,7 @@ a:link {
 }
 a:hover
 {
-  color: red;
+  color: red !important;
 }
 
 a:hover::after{
