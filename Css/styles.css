@@ -1,43 +1,4 @@
-
-.bg{
-  /* font-size: 35px; */
-  font-family: 'VT323', monospace;
-  border: rgb(255, 255, 255);
-  background-color: #1A1A1A;
-}
-/*
-.loader_bg {
-  position: fixed;
-  z-index: 99999;
-  background: #7a2121;
-  width: 100%;
-  height: 100%;
-}
-
-.loader{
-    border: 0 solid transparent;
-    border-radius: 50%;
-}
-*/
-
-
 /* NAV BAR */
-
-a{
-  color: white;
-}
-a:link {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-a:hover
-{
-  color: red;
-}
-
-a:hover::after{
-  color: white;
-}
 
 #btnapear{
   display: none;
@@ -54,6 +15,7 @@ a:hover::after{
 /* .nav-item{
   margin: 6rem 1rem;
 } */
+
 
 /* CONTEUDO */
 
@@ -88,18 +50,6 @@ a:hover::after{
   border-top: 10px dashed rgb(255, 255, 255);
   margin: 35px 0px;
 }
-
-h1 {
-  font-size: 4rem;
-  color: white;
-  text-align: center;
-}
-
-/* h1 {
-  font-size: 60px;
-  color: white;
-  text-align: center;
-} */
 
 /* CARROSSEL */
 
@@ -137,66 +87,6 @@ h1 {
   left: 8%;
 }
 
-/* FOOTER */
-
-
-
-.vertical_cima{
-  border-right: 7px solid rgb(255, 255, 255);
-  border-left: 7px solid rgb(255, 255, 255);
-  border-top: 7px solid rgb(255, 255, 255);
-  height: 60px;
-  left: 0;
-  margin-top: 0px;
-  
-}
-.vertical_baixo{
-  border-right: 7px solid rgb(255, 255, 255);
-  border-left: 7px solid rgb(255, 255, 255);
-  border-bottom: 7px solid rgb(255, 255, 255);
-  height: 60px;
-  left: 0;
-  margin-top: 0px;
-}
-
-footer{
-    width: 100%;
-    padding-top: 40px;
-    color: #fff;
-}
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.footer-content p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-}
-.socials{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.socials li{
-    margin: 0 10px;
-}
-
-.footer-bottom{
-  width: 100%;
-    text-align: center;
-  padding: 20px;
-}
-
-.footer-bottom p{
-    word-spacing: 2px;
-    text-transform: capitalize;
-}
 
 /* TENTANDO FAZER RESPONSIVO */
 
@@ -342,6 +232,3 @@ footer{
 
 
 /* xs */
-
-
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=VT323&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');

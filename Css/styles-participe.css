@@ -1,0 +1,55 @@
+ /* CONTEUDO */
+  
+/*
+  .container-fluid{
+  }
+*/
+  
+  .horizontal_esquerdo {
+    height: 600px;
+    border-left: 10px dashed rgb(248, 248, 248);
+    border-bottom: 10px dashed rgb(255, 255, 255);
+    border-top: 10px dashed rgb(255, 255, 255);
+    width: 30%;
+    margin: 35px 0px;
+    position: absolute;
+  }
+  .horizontal_direito{
+    height: 600px;
+    border-right: 10px dashed rgb(255, 255, 255);
+    border-bottom: 10px dashed rgb(255, 255, 255);
+    border-top: 10px dashed rgb(255, 255, 255);
+    width: 30%;
+    margin: 35px 0px;
+    right: 90px;
+    position: absolute;
+  }
+  
+  /* participe */
+  
+  .img-theoritas{
+    margin-top: 8%;
+  }
+  .vertical_cima{
+    border-right: 7px solid rgb(255, 255, 255);
+    border-left: 7px solid rgb(255, 255, 255);
+    border-top: 7px solid rgb(255, 255, 255);
+    height: 150px;
+    width:50%;
+    position: absolute;
+  }
+  .vertical_baixo{
+    border-right: 7px solid rgb(255, 255, 255);
+    border-left: 7px solid rgb(255, 255, 255);
+    border-bottom: 7px solid rgb(255, 255, 255);
+    height: 150px;
+    margin-top: 10%;
+    width:50%;
+    position: absolute;
+  }
+  
+  .participe{
+    width: 1000px !important;
+    display: flex;
+  }
+  
