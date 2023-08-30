@@ -1,3 +1,4 @@
+//CARROSSEL
 var myCarousel = document.querySelector('#myCarousel')
 var carousel = new bootstrap.Carousel(myCarousel, {
    interval: 200000
@@ -20,7 +21,6 @@ var carousel = new bootstrap.Carousel(myCarousel, {
         next.children(':first-child').clone().appendTo($(this));
       }
 });
-
 
 
 // PARA DE ESPIAR NÃO FAÇO ENIGMA TO SÓ FAZENDO UM SITEZINHO 
