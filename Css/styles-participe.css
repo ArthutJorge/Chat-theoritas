@@ -26,7 +26,12 @@
   }
   
   .participe p {
-    width: 80%;
+    width: 70%;
+  }
+
+  .participe h1{
+    text-align: start !important;
+    margin-left: 20px;
   }
   
   
@@ -59,10 +64,19 @@
 
   #botões {
     position: absolute;
-    right: 15%;
+    right: 10%;
+    
+    z-index: 999;
   }
 
   #botões button{
     background-color: yellow;
+    margin-top: 10%;
+    border-radius: 20px;
+    border: 3px solid black;
+  }
+
+  #botões a {
+    color: black !important;
   }
   

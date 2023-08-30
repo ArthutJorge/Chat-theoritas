@@ -1,7 +1,7 @@
 //CARROSSEL
 var myCarousel = document.querySelector('#myCarousel')
 var carousel = new bootstrap.Carousel(myCarousel, {
-   interval: 200000
+   interval: 7000
  })
 
  $('.carousel .carousel-item').each(function(){
