@@ -17,48 +17,21 @@
 } */
 
 
-/* CONTEUDO */
 
-/* .horizontal_esquerdo {
-  padding-top: 37rem;
-  border-left: 10px dashed rgb(248, 248, 248);
-  border-bottom: 10px dashed rgb(255, 255, 255);
-  border-top: 10px dashed rgb(255, 255, 255);
-  margin: 35px 0px;
-}
-.horizontal_direito{
-  padding-top: 37rem;
-  border-right: 10px dashed rgb(255, 255, 255);
-  border-bottom: 10px dashed rgb(255, 255, 255);
-  border-top: 10px dashed rgb(255, 255, 255);
-  margin: 35px 0px;
-} */
-
-
-
-.horizontal_esquerdo {
-  padding-top: 600px;
-  border-left: 10px dashed rgb(248, 248, 248);
-  border-bottom: 10px dashed rgb(255, 255, 255);
-  border-top: 10px dashed rgb(255, 255, 255);
-  margin: 35px 0px;
-}
-.horizontal_direito{
-  padding-top: 600px;
-  border-right: 10px dashed rgb(255, 255, 255);
-  border-bottom: 10px dashed rgb(255, 255, 255);
-  border-top: 10px dashed rgb(255, 255, 255);
-  margin: 35px 0px;
-}
 
 /* CARROSSEL */
+
+.carousel{
+  padding: 5%;
+  
+}
 
 @media (max-width: 768px) {
   .carousel-inner .carousel-item > div {
     display: none;
   }
   .carousel-inner .carousel-item > div:first-child {
-    display: block;
+    display: flex;
   }
 }
 

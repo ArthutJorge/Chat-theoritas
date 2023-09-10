@@ -6,15 +6,14 @@
   display: flex;
 }
 .arcos1, .arcos2, .arcos3, .arcos4{
-  margin-right: 30%;
+  margin:auto;
+  margin-bottom: 5%;
 }
 
 .arcos{
   list-style-type: none;
   display: flex;
-  padding: 20%;
   padding-top: 10%;
-  position: absolute;
 }
 
 .idioma-img{
@@ -22,28 +21,4 @@
   height: 32px;
   margin: 10px 0px;
   margin-right: 10px;
-}
-
-
-
-/* CONTEUDO */
-
-.horizontal_esquerdo {
-  height: 700px;
-  border-left: 10px dashed rgb(248, 248, 248);
-  border-bottom: 10px dashed rgb(255, 255, 255);
-  border-top: 10px dashed rgb(255, 255, 255);
-  width: 30%;
-  margin: 35px 0px;
-  position: absolute;
-}
-  .horizontal_direito{
-  height: 700px;
-  width: 108%;
-  border-right: 10px dashed rgb(255, 255, 255);
-  border-bottom: 10px dashed rgb(255, 255, 255);
-  border-top: 10px dashed rgb(255, 255, 255);
-  margin: 35px 0px;
-  right: 90px;
-  position: inherit;
 }

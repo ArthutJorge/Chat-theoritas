@@ -58,6 +58,27 @@ h1 {
   font-size: 60px;
   color: white;
   text-align: center;
+  
+  margin: auto;
+}
+
+/* CONTEUDO */
+
+#conteudosec{
+  border: 9px dashed white;
+}
+
+#ct-conteudo{
+  margin-top: -45px;
+  background-color: #1A1A1A;
+  width: 370px;
+}
+
+#espaco{
+  width: 320px;
+  background-color: #1A1A1A;
+  margin-top: -45px;
+  color: #1A1A1A;
 }
 
 /* FOOTER */
