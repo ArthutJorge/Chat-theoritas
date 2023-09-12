@@ -55,7 +55,7 @@ p{
 }
 
 h1 {
-  font-size: 60px;
+  font-size: calc(2vmax + 30px);
   color: white;
   text-align: center;
   
@@ -71,7 +71,7 @@ h1 {
 #ct-conteudo{
   margin-top: -45px;
   background-color: #1A1A1A;
-  width: 370px;
+  width: calc(22vmax + 100px);
 }
 
 #espaco{
@@ -105,7 +105,7 @@ h1 {
     height: 100px;
     margin: 5%;
     left: 0;
-    margin-top: 0px;
+    margin-top: calc(240px - 12vmax);
     width: -webkit-fill-available;
     position: absolute;
   }
@@ -154,118 +154,41 @@ h1 {
   #logo {
     text-align: center;
   }
-  
-  @media screen and (max-width: 320px) {
-    .nav-item{
-      margin: 0.5rem 0.5rem;
-  }
-    #nvbap{
-      display: none;
+
+    /* md */
+    @media screen and (max-width: 425px) {
+      .nav-item{
+        margin: 0.5rem 0.5rem;
     }
-  
-    #btnapear{
-      
-      display: contents;
+      #nvbap{
+        display: none;
+      }
+    
+      #btnapear{
+        display: contents;
+      }
+    
+      .iconnav{
+        height: 4rem;
+      }
+    
+      .navbar-icon-texto{
+        font-size: 2.5rem;
+      }
+    
+      .Lg-theorytas{
+        padding-left: 0.4rem;
+        width: 16rem;
+        margin: auto;
+      }
+    
+      .btnsize{
+        width: 3rem;
+        margin: 0.5rem 0.5rem;
+      }
+    
+      .btnonly{
+        position: relative;
+        float: right;
+      }
     }
-  
-    .iconnav{
-      height: 4rem;
-    }
-  
-    .navbar-icon-texto{
-      font-size: 2.5rem;
-    }
-  
-    .Lg-theorytas{
-      padding-right: 0.5rem;
-      width: 16rem;
-      margin: auto;
-    }
-  
-  
-    .btnsize{
-      width: 3rem;
-      margin: 0.5rem 0.5rem;
-    }
-  
-    .btnonly{
-      position: relative;
-      float: right;
-    }
-  }
-  
-  /* sm */
-  @media screen and (max-width: 375px) {
-    .nav-item{
-      margin: 0.5rem 0.5rem;
-  }
-    #nvbap{
-      display: none;
-    }
-  
-    #btnapear{
-      
-      display: contents;
-    }
-  
-    .iconnav{
-      height: 4rem;
-    }
-  
-    .navbar-icon-texto{
-      font-size: 2.5rem;
-    }
-  
-    .Lg-theorytas{
-      padding-left: 0.4rem;
-      width: 16rem;
-    }
-  
-    .btnsize{
-      width: 3rem;
-      margin: 0.5rem 0.5rem;
-    }
-  
-    .btnonly{
-      position: relative;
-      float: right;
-    }
-  }
-  
-  /* md */
-  @media screen and (max-width: 425px) {
-    .nav-item{
-      margin: 0.5rem 0.5rem;
-  }
-    #nvbap{
-      display: none;
-    }
-  
-    #btnapear{
-      
-      display: contents;
-    }
-  
-    .iconnav{
-      height: 4rem;
-    }
-  
-    .navbar-icon-texto{
-      font-size: 2.5rem;
-    }
-  
-    .Lg-theorytas{
-      padding-left: 0.4rem;
-      width: 16rem;
-    }
-  
-    .btnsize{
-      width: 3rem;
-      margin: 0.5rem 0.5rem;
-    }
-  
-    .btnonly{
-      position: relative;
-      float: right;
-    }
-  }
