@@ -13,7 +13,7 @@
 .arcos{
   list-style-type: none;
   display: flex;
-  padding-top: 10%;
+  padding-top: calc(5% + 20px);
 }
 
 .idioma-img{
@@ -21,4 +21,30 @@
   height: 32px;
   margin: 10px 0px;
   margin-right: 10px;
+}
+
+#imgArco:hover{
+  content: url("../Images/arcoaberto.png");
+}
+
+#imgArco{
+  content: url("../Images/arcofechado.png");
+}
+
+@media screen and (max-width: 725px) {
+.arcos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+.arcos1, .arcos2, .arcos3, .arcos4{
+  margin-bottom: 40px;
+}
+}
+
+@media screen and (max-width: 550px) {
+  .arcos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

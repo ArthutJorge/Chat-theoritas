@@ -156,7 +156,7 @@ h1 {
   }
 
     /* md */
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 625px) {
       .nav-item{
         margin: 0.5rem 0.5rem;
     }
