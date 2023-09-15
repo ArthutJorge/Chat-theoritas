@@ -24,7 +24,7 @@
     border-right: 7px solid rgb(255, 255, 255);
     border-left: 7px solid rgb(255, 255, 255);
     border-top: 7px solid rgb(255, 255, 255);
-    height: 150px;
+    height: calc(3vmax + 40px);
     width:120%;
     margin-top: 10%;
   }
@@ -32,7 +32,7 @@
     border-right: 7px solid rgb(255, 255, 255);
     border-left: 7px solid rgb(255, 255, 255);
     border-bottom: 7px solid rgb(255, 255, 255);
-    height: 150px;
+    height: calc(3vmax + 40px);
     width: 120%;
     margin-bottom: 10%;
   }
@@ -49,11 +49,12 @@
 
   #botões {
     margin-bottom: 10%;
-    right: 10px;
-    z-index: 999;
+    z-index: 99;
     margin-left: 10%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    align-content: center;
+    margin-top: 6%;
   }
 
   #botões button, #botões a{

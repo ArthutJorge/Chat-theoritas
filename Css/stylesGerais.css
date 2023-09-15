@@ -169,9 +169,6 @@ h1 {
       .nav{
         display: flex !important;
       }
-      #ct-conteudo{
-        margin-left: -10px !important
-      }
       #nvbap{
         display: none;
       }
@@ -187,5 +184,11 @@ h1 {
       .btnonly{
         position: relative;
         float: right;
+      }
+    }
+
+    @media (max-width: 350px){
+      #ct-conteudo{
+        margin-left: -10% !important
       }
     }
