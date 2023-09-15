@@ -66,8 +66,8 @@
     outline: 5px solid black;
     border-right: 5px solid orange;
     border-bottom: 5px solid orange;
-    width: calc(10vmax + 50px);
-    font-size: calc(2.5vmax + 10px);
+    width: calc(5vmax + 50px);
+    font-size: calc(1.2vmax + 10px);
   }
 
   #botões button:hover{
@@ -95,14 +95,15 @@
       display: block;
     }
     #botões{
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      flex-wrap: wrap;
       margin-left: 0%;
       margin: auto;
       margin-bottom: 20px;
     }
     #botões button{
       margin: auto;
-      margin-top: 0%;
+      margin-top: 10%;
     }
   }
   

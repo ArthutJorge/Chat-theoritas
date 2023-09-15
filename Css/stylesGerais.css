@@ -48,9 +48,11 @@ a:hover::after{
   background-color: #1A1A1A;
 }
 
-.navbar-icon-texto{
-
+.btnsize {
+  width: calc(4vmax + 10px);
 }
+
+
 /* PADRÕES DE ESTILO */
 
 p{
@@ -59,14 +61,11 @@ p{
 }
 
 h1 {
-  font-size: calc(2vmax + 30px);
+  font-size: calc(2vmax + 25px);
   color: white;
   text-align: center;
-  
   margin: auto;
 }
-
-/* CONTEUDO */
 
 #conteudosec{
   border: 9px dashed white;
@@ -74,8 +73,9 @@ h1 {
 
 #ct-conteudo{
   margin-top: -45px;
+  width: 22vmax;
+  justify-content: center;
   background-color: #1A1A1A;
-  width: calc(22vmax + 100px);
 }
 
 /* FOOTER */
@@ -102,7 +102,7 @@ h1 {
     height: 100px;
     margin: 5%;
     left: 0;
-    margin-top: calc(240px - 12vmax);
+    margin-top: calc(280px - 14vmax);
     width: -webkit-fill-available;
     position: absolute;
   }
@@ -124,12 +124,12 @@ h1 {
       max-width: 500px;
       margin: 10px auto;
       line-height: 28px;
+      padding: 0;
   }
   .socials{
       list-style: none;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 0;
   }
   .socials li{
       margin: 0 10px;
@@ -137,14 +137,20 @@ h1 {
   
   .footer-bottom{
     width: 100%;
-      text-align: center;
-    padding: 20px;
+    text-align: center;
   }
   
   .footer-bottom p{
       word-spacing: 2px;
       text-transform: capitalize;
+      margin-left: 0px !important;
   }
+  .nav-item, .nav-center{
+    justify-content: center;
+}
+.Lg-theorytas, .logo-footer{
+  width: calc(15vmax + 80px);
+}
 
   /* RESPONSIVIDADE */
   
@@ -163,9 +169,9 @@ h1 {
       .nav{
         display: flex !important;
       }
-      .nav-item{
-        margin: 0.5rem 0.5rem;
-    }
+      #ct-conteudo{
+        margin-left: -10px !important
+      }
       #nvbap{
         display: none;
       }
@@ -173,24 +179,9 @@ h1 {
       #btnapear{
         display: contents;
       }
-    
-      .iconnav{
-        height: 4rem;
-      }
-    
+
       .navbar-icon-texto{
         font-size: 2.5rem;
-      }
-    
-      .Lg-theorytas{
-        padding-left: 0.4rem;
-        width: 16rem;
-        margin: auto;
-      }
-    
-      .btnsize{
-        width: 3rem;
-        margin: 0.5rem 0.5rem;
       }
     
       .btnonly{

@@ -4,67 +4,27 @@
   padding: 0;
   color: white;
   text-align: center;
+  font-size: calc(2vmax + 8px);
 }
 
-.membros1{
-
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  display: flex;
-  align-items: center;
-  margin-left: 20%;
-  margin-right: 20%;
-} 
-.membros2{
-
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  display: flex;
-  align-items: center;
-} 
-.membros3{
-
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  display: flex;
-  align-items: center;
-  margin-left: 20%;
-  margin-right: 20%;
-} 
-.membros4{
-  right: 0;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  display: flex;
-  align-items: center;
-  margin-left: 30%;
-  margin-right: 30%;
-}
-
-.membros5{
-  right: 0;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  display: flex;
-  align-items: center;
-  margin-left: 40%;
-  margin-right: 40%;
-}
-
-.membros6{
-  right: 0;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  display: flex;
-  align-items: center;
-  margin-left: 20%;
-  margin-right: 20%;
+#conteudosec{
+  padding: 0;
 }
 
 .membros{
   list-style-type: none;
   padding-top: 10%;
-  
+}
+
+.membros1, .membros2, .membros3, .membros4, .membros5, .membros6{
+  justify-content: center;
+  padding-top: 4rem; padding-bottom: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.membros img{
+  width: calc(4vmax + 60px);
 }
 h2{
   text-align: center;
