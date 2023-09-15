@@ -6,46 +6,54 @@
   */
   
 
-  .participe p {
-    width: 60%;
-  }
-
-  .participe h1{
-    text-align: start !important;
-    margin-left: 20px;
+  .participe h1 {
+    width: 100%;
+    margin-left: 0;
+    font-size: calc(2.5vmax + 15px);
   }
   
+  .participe p{
+    width: 100%;
+    margin-left: 0;
+    font-size: calc(1.5vmax + 10px);
+  }
   
   /* participe */
   
-  .img-theoritas{
-    margin-top: 8%;
-  }
   .vertical_cima{
     border-right: 7px solid rgb(255, 255, 255);
     border-left: 7px solid rgb(255, 255, 255);
     border-top: 7px solid rgb(255, 255, 255);
     height: 150px;
-    width:40%;
-    position: absolute;
+    width:120%;
+    margin-top: 10%;
   }
   .vertical_baixo{
     border-right: 7px solid rgb(255, 255, 255);
     border-left: 7px solid rgb(255, 255, 255);
     border-bottom: 7px solid rgb(255, 255, 255);
     height: 150px;
-    width:40%;
-    position: absolute;
+    width: 120%;
+    margin-bottom: 10%;
+  }
+  
+  .col{
+    width: 100%;
   }
   
   .participe{
+    width: 100% !important;
     display: flex;
+    text-align: center;
   }
 
   #botões {
     margin-bottom: 10%;
     right: 10px;
     z-index: 999;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   #botões button, #botões a{
@@ -58,6 +66,8 @@
     outline: 5px solid black;
     border-right: 5px solid orange;
     border-bottom: 5px solid orange;
+    width: calc(10vmax + 50px);
+    font-size: calc(2.5vmax + 10px);
   }
 
   #botões button:hover{
@@ -79,4 +89,21 @@
   #botões a {
     color: black !important;
   }
+
+  @media (max-width: 800px){
+    .participe{
+      display: block;
+    }
+    #botões{
+      grid-template-columns: repeat(2, 1fr);
+      margin-left: 0%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    #botões button{
+      margin: auto;
+      margin-top: 0%;
+    }
+  }
+  
   

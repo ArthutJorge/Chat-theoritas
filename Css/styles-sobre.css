@@ -6,14 +6,26 @@
 */
 
 
-.sobre p {
-  width: 70%;
+.sobre h1 {
+  width: 100%;
+  margin-left: 0;
+  font-size: calc(2.5vmax + 15px);
+}
+
+.sobre p{
+  width: 100%;
+  margin-left: 0;
+  font-size: calc(1.5vmax + 10px);
 }
 
 /* sobre */
 
 .img-theoritas{
-  margin-top: 8%;
+  align-self: center !important;
+}
+
+.img-theoritas img {
+  width: calc(17vmax + 100px) !important;
 }
 .vertical_cima{
   border-right: 7px solid rgb(255, 255, 255);
@@ -32,12 +44,18 @@
   margin-bottom: 10%;
 }
 
-.sobre{
-  width: 1000px !important;
-  display: flex;
+.col{
+  width: 100%;
 }
 
-.sobre h1{
-  text-align: start !important;
-  margin-left: 20px;
+.sobre{
+  width: 100% !important;
+  display: flex;
+  text-align: center;
+}
+
+@media (max-width: 900px){
+  .img-theoritas img{
+    display: none;
+  }
 }

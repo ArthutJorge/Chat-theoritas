@@ -47,6 +47,10 @@ a:hover::after{
 .dropcolor{
   background-color: #1A1A1A;
 }
+
+.navbar-icon-texto{
+
+}
 /* PADRÕES DE ESTILO */
 
 p{
@@ -72,13 +76,6 @@ h1 {
   margin-top: -45px;
   background-color: #1A1A1A;
   width: calc(22vmax + 100px);
-}
-
-#espaco{
-  width: 320px;
-  background-color: #1A1A1A;
-  margin-top: -45px;
-  color: #1A1A1A;
 }
 
 /* FOOTER */
@@ -155,8 +152,17 @@ h1 {
     text-align: center;
   }
 
-    /* md */
-    @media screen and (max-width: 625px) {
+  @media (max-width: 1250px){
+      .nav{
+        display: grid !important;
+        grid-template-columns: (1, 2fr) !important;
+      }
+    }
+
+  @media (max-width: 625px) {
+      .nav{
+        display: flex !important;
+      }
       .nav-item{
         margin: 0.5rem 0.5rem;
     }
