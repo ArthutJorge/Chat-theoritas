@@ -73,6 +73,7 @@
 
   #botões button:hover{
     scale: 1.05;
+    color: red !important;
   }
 
   #botões a:hover{
@@ -85,6 +86,7 @@
 
   #botões button:active{
     scale: 0.95;
+    color: blue !important;
   }
 
   #botões a {
