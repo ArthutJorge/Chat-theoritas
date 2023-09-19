@@ -13,12 +13,16 @@
 .arcos{
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   padding-top: calc(5% + 20px);
+}
+
+.arcos h1{
+  font-size: calc(3vmax);
 }
 
 .idioma-img{
   width: 32px;
-  height: 32px;
   margin: 10px 0px;
   margin-right: 10px;
 }
@@ -32,19 +36,7 @@
 }
 
 @media screen and (max-width: 780px) {
-.arcos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  text-align: center;
-}
 .arcos1, .arcos2, .arcos3, .arcos4{
   margin-bottom: 40px;
 }
-}
-
-@media screen and (max-width: 580px) {
-  .arcos {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
 }

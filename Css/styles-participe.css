@@ -40,7 +40,7 @@
   .col{
     width: 100%;
   }
-  
+
   .participe{
     width: 100% !important;
     display: flex;
@@ -48,22 +48,22 @@
   }
 
   #botões {
-    margin-bottom: 10%;
-    z-index: 99;
     margin-left: 10%;
+    align-items:center;
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(1, 1fr);
-    align-content: center;
-    margin-top: 6%;
   }
 
+
   #botões button, #botões a{
+    z-index: 99;
     transition: all 0.2s ease-in-out;
+    color: black !important;
   }
 
   #botões button{
     background-color: yellow;
-    margin-top: 10%;
     outline: 5px solid black;
     border-right: 5px solid orange;
     border-bottom: 5px solid orange;
@@ -76,21 +76,9 @@
     color: red !important;
   }
 
-  #botões a:hover{
-    color: red !important;
-  }
-
-  #botões a:active{
-    color: blue !important;
-  }
-
   #botões button:active{
     scale: 0.95;
     color: blue !important;
-  }
-
-  #botões a {
-    color: black !important;
   }
 
   @media (max-width: 800px){
@@ -100,13 +88,8 @@
     #botões{
       display: flex;
       flex-wrap: wrap;
-      margin-left: 0%;
       margin: auto;
       margin-bottom: 20px;
-    }
-    #botões button{
-      margin: auto;
-      margin-top: 10%;
     }
   }
   
