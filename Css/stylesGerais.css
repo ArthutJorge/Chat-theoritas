@@ -44,6 +44,10 @@ a:hover::after{
   display: none;
 }
 
+.btnonly{
+  z-index: 99;
+}
+
 .dropcolor{
   background-color: #1A1A1A;
 }

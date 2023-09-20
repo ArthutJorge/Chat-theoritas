@@ -23,17 +23,17 @@
 
 .carousel{
   padding: 5%;
-  
 }
 
 .card-body{
   height: 500px;
   margin-right: 10px;
+  background-image: url("../Images/ArcoBagi.png");
+  background-size: cover;
+  background-position: center center;
+  color: white !important;
 }
 
-.card-body p{
-  color: black !important;
-}
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-start,
 .carousel-inner .carousel-item-next,
@@ -54,21 +54,6 @@
   .card-body{
     width: 50vw;
   }
-}
-
-.card-body{
-  height: 500px;
-  margin-right: 10px;
-}
-
-.card-body p{
-  color: black !important;
-}
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-start,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-  display: flex;
 }
 
 @media (min-width: 768px) {
