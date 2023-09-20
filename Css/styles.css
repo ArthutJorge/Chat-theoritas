@@ -52,7 +52,7 @@
     justify-content: center;
   }
   .card-body{
-    width: 50vw;
+    width: 60vw;
   }
 }
 
@@ -79,5 +79,3 @@
     transform: translateX(-25%) !important;
   }
 }
-
-

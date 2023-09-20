@@ -40,22 +40,19 @@ a:hover::after{
   color: white;
 }
 
-#btnapear{
-  display: none;
+.iconnav{
+  width: calc(3.5vmax + 8px);
+  z-index: 999;
 }
 
-.btnonly{
-  z-index: 99;
+.navbar-icon-texto{
+  font-size: calc(2.5vmax + 8px);
+  z-index: 999;
 }
 
-.dropcolor{
-  background-color: #1A1A1A;
+.iconRight{
+  margin-left: 30px;
 }
-
-.btnsize {
-  width: calc(4vmax + 10px);
-}
-
 
 /* PADRÕES DE ESTILO */
 
@@ -83,7 +80,7 @@ h1 {
 }
 
 .p-5{
-  padding: 1rem !important;
+  padding: 2rem !important;
 }
 
 .secret{
@@ -114,7 +111,7 @@ h1 {
     height: 100px;
     margin: 5%;
     left: 0;
-    margin-top: calc(280px - 14vmax);
+    margin-top: calc(150px - 9vmax);
     width: -webkit-fill-available;
     position: absolute;
   }
@@ -177,19 +174,8 @@ h1 {
       }
     }
 
-  @media (max-width: 625px) {
-      .nav{
-        display: flex !important;
-      }
-      #nvbap{
-        display: none;
-      }
-    
-      #btnapear{
-        display: contents;
-      }
-      .btnonly{
-        position: relative;
-        float: right;
-      }
+  @media (max-width: 400px){
+    .nav-center{
+      width: 100vw;
     }
+  }
