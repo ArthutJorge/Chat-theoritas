@@ -2,10 +2,8 @@
 
 .arcos-idioma{
   padding: 0;
-  width: fit-content;
+  width: calc(190px - 2vmax);
   color: white;
-  
-  justify-content: center;
   display: flex;
 }
 .arcos1, .arcos2, .arcos3, .arcos4{
@@ -28,7 +26,6 @@
 .idioma-img{
   width: 32px;
   margin: 10px 0px;
-  margin-right: 10px;
 }
 
 #imgArco:hover{
