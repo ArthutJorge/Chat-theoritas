@@ -2,11 +2,15 @@
 
 .arcos-idioma{
   padding: 0;
+  width: fit-content;
   color: white;
+  
+  justify-content: center;
   display: flex;
 }
 .arcos1, .arcos2, .arcos3, .arcos4{
-  margin:auto;
+  text-align: center;
+  margin: auto;
   margin-bottom: 5%;
 }
 
