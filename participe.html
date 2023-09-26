@@ -1,19 +1,81 @@
 <!-- AJAX -->
-
 <script>
-  function loadIframe(src, iframeId) {
-      // Oculta todos os iframes
-      var iframes = document.querySelectorAll('iframe');
-      iframes.forEach(function(iframe) {
-          iframe.style.display = 'none';
-      });
+  var translations = {
+        pt: {
+              participe: "Participe",
+              formText: "Form - Português"
+        },
+        en: {
+              participe: "Join us",
+              formText: "Form - English"
+            },
+        es: {
+              participe: "Participar",
+              formText: "Form - Spanish"
+        },
+        fr: {
+              participe: "Participer",
+              formText: "Form - Francés"
+        }
+      };
+    function updateLanguage(language) {
+      const languageNameElement = document.getElementById("language-name");
+      const participeElement = document.getElementById("participe");
+      if (participeElement) {
+          participeElement.textContent = translations[language].participe;
+        }
+      if (languageNameElement) {
+        languageNameElement.textContent = translations[language][language];
+      }
+      if (participeElement) {
+        participeElement.innerHTML = `<button class="botao" onclick="openForm('${translations[language].formUrl}')"  width="150" height="150" >${translations[language].formText}</button>`;
+        }
+           const url = `participe_${language}.html`;
+      document.getElementById("content").innerHTML = `<iframe src="${url}" frameborder="0" width=1200 height="800"></iframe>`;
+      document.getElementById("FormContent").innerHTML = participeElement.innerHTML ;
+    }
+    function onLoad() {
+      updateLanguage('pt');
+    }
+  
+    function openForm(url) {
+      window.open(url, "_blank");
+    }
+  </script>
+  <style>
 
-      // Exibe o iframe selecionado
-      var iframe = document.getElementById(iframeId);
-      iframe.src = src;
-      iframe.style.display = 'block';
+.botao{
+    background-color: #180ea1;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
-</script>
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.botao:hover {
+    animation: none;
+}
+
+
+  </style>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -23,25 +85,18 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="Css\styles-participe.css">
   <link rel="stylesheet" href="Css\stylesGerais.css">
-
- 
   <!--Font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=VT323&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  
 </head>
-
 <body class="bg p-5">
   <!--Pré Loader-->
   <div class = "container-fluid loader_bg">
       <div class = "loader"></div>
   </div>
-
   <!--Cabeçalho-->
-
   <section class="container-fluid ">
-
     <div id ="nvbap">
       <ul class="nav justify-content-center">
         <li class="nav-item d-flex">
@@ -70,75 +125,41 @@
         </li>
       </ul>
     </div>
-
   </section>
   <br>
-
 <!-- Conteúdo -->
 <section id="conteudosec" class="container">
   <div class="row">
       <div class="col" id="conteudo1">
           <!-- Conteúdo Site dentro de site -->
+          <h1 id="participe">Participe</h1>
           <div class="container">
               <div class="row">
                   <div class="col">
-                      <img src="Images/Google-Translate-icon.png" width="48" height="48">
-                      <a href="javascript:void(0);" onclick="loadIframe('participe_pt.html', 'iframe_pt')">Português</a>
+                      <img src="Images/flag_brasil_icon.png" width="48" height="48">
+                      <a href="javascript:void(0);" class="language-name"  onclick="updateLanguage('pt')">Português</a>
                   </div>
                   <div class="col">
-                      <img src="Images/Google-Translate-icon.png" width="48" height="48">
-                      <a href="javascript:void(0);" onclick="loadIframe('participe_en.html', 'iframe_en')">English</a>
+                      <img src="Images/flag_united_kingdom_icon.png" width="48" height="48">
+                      <a href="javascript:void(0);" class="language-name"  onclick="updateLanguage('en')">English</a>
                   </div>
                   <div class="col">
-                      <img src="Images/Google-Translate-icon.png" width="48" height="48">
-                      <a href="javascript:void(0);" onclick="loadIframe('participe_es.html', 'iframe_es')">Spanish</a>
+                      <img src="Images/flag_mexico_icon.png" width="48" height="48">
+                      <a href="javascript:void(0);"class="language-name"   onclick="updateLanguage('es')">Spanish</a>
                   </div>
                   <div class="col">
-                      <img src="Images/Google-Translate-icon.png" width="48" height="48">
-                      <a href="javascript:void(0);" onclick="loadIframe('participe_fr.html', 'iframe_fr')">Francês</a>
+                      <img src="Images/flag_france_icon.png" width="48" height="48">
+                      <a href="javascript:void(0);"class="language-name"   onclick="updateLanguage('fr')">Francés</a>
                   </div>
               </div>
           </div>
+          <hr>
           <!-- Conteúdo Site dentro de site Chamada do AJAX -->
-          <iframe name="iframe_pt" id="iframe_pt" width="100%" height="800px" style="display: none;"></iframe>
-          <iframe name="iframe_en" id="iframe_en" width="100%" height="800px" style="display: none;"></iframe>
-          <iframe name="iframe_es" id="iframe_es" width="100%" height="800px" style="display: none;"></iframe>
-          <iframe name="iframe_fr" id="iframe_fr" width="100%" height="800px" style="display: none;"></iframe>
+          <div id="content" style="width:auto ;height:800"></div> 
       </div>
   </div>
-  
-  <div class="IconsBand">
-      <div class="coluna">
-          <a href="https://forms.gle/YTyn8VSSECP728qD" target="_blank">
-              <img src="./Images/flag_brasil_icon.png" width="64" height="64" alt="Form - Português">
-              <p>Form - Português</p>
-          </a>
-      </div>
-      <div class="coluna">
-          <a href="https://forms.gle/yLPedujnU61TCSx98" target="_blank">
-              <img src="./Images/flag_united_kingdom_icon.png" width="64" height="64" alt="Form - English">
-              <p>Form - English</p>
-          </a>
-      </div>
-      <div class="coluna">
-          <a href="https://forms.gle/59iVNysjcV2xTA2Y7" target="_blank">
-              <img src="./Images/flag_mexico_icon.png" width="64" height="64" alt="Form - Spanish">
-              <p>Form - Spanish</p>
-          </a>
-      </div>
-      <div class="coluna">
-          <a href="https://docs.google.com/forms/d/1Rt_VSLblypf659zAtqu8DtzcRD66WCiraWfiPbNcDDA/" target="_blank">
-              <img src="./Images/flag_france_icon.png" width="64" height="64" alt="Form - Francés">
-              <p>Form - Francés</p>
-          </a>
-      </div>
-  </div>
-  
-
 </section>
-
   <footer>
-
       <div class="vertical_cima_footer col"></div>
       <div class="footer-content">
         <h1>Chat Theoritas</h1>
@@ -149,7 +170,6 @@
           <li><a href="#"><img src="./Images/celldisc.png" alt=""></a></li>
         </ul><img class="logo-footer" src="./Images/theoritas.png" width="300" alt="Theoritas-footer">
       </div>
-      
       <div class="vertical_baixo_footer col"></div>
       <div class="footer-bottom">
         <p>copyright &copy;2023 Todos os direitos reservados.</p>
@@ -157,6 +177,5 @@
       <h1 id="ct-conteudo" class="secret">The federation</h1></div>
     </footer>
 
-
-   
-  
+</body>
+</html>
