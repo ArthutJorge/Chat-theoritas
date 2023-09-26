@@ -1,3 +1,67 @@
+<style>
+  .language-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .language-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .language-icon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  .language-name {
+    text-align: left;
+    cursor: pointer;
+    color: white;
+  }
+  #content iframe {
+    width: 100%;
+    height: 500px;
+  }
+</style>
+ <script>
+
+var translations = {
+      pt: {
+            sobreNos: "Sobre nós"
+      },
+      en: {
+           sobreNos: "About us"
+          },
+      es: {
+         sobreNos: "Sobre nosotros"
+      },
+      fr: {
+           sobreNos: "À propos de nous"
+      }
+    };
+
+  function updateLanguage(language) {
+    const languageNameElement = document.getElementById("language-name");
+    const sobreNosElement = document.getElementById("sobre-nos");
+   
+    if (sobreNosElement) {
+        sobreNosElement.textContent = translations[language].sobreNos;
+      }
+
+    if (languageNameElement) {
+      languageNameElement.textContent = translations[language][language];
+    }
+    const url = `sobre_${language}.html`;
+    document.getElementById("content").innerHTML = `<iframe src="${url}" frameborder="0" width="100%" height="100%"></iframe>`;
+  }
+  function onLoad() {
+    updateLanguage('pt');
+  }
+
+</script>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -23,7 +87,6 @@
   <!--Cabeçalho-->
 
   <section class="container-fluid ">
-
     <div id ="nvbap">
       <ul class="nav justify-content-center">
         <li class="nav-item d-flex">
@@ -38,7 +101,7 @@
         </li>
         <li class="nav-center d-flex">
           <a class="navbar-icon-texto" href="index.html">
-            <img src="./Images/theoritas.png" class="Lg-theorytas" ></a>
+            <img src="./Images/theoritas.png" class="Lg-theorytas" style="height:150px; width:150px"></a>
         </li>
         <li class="nav-item d-flex">
           <a class="navbar-icon-texto" href="participe.html">
@@ -67,17 +130,32 @@
             <div class="sobre">
               <div class="img-theoritas"><img src="./Images/theoritas.png" width="340" alt="Theoritaslogo"></div>
                 <div class="col">
-                  <div class="vertical_cima col"></div>
-                      <h1>Sobre nós</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nemo earum eveniet enim iusto? Sunt repudiandae laborum. Tb Update</p>
-                          <div class="vertical_baixo col"></div>
+                  <h1 id="sobre-nos">Sobre nós</h1>
+                      <div class="language-container">
+                        <div class="language-row">
+                            <span class="language-name" onclick="updateLanguage('pt')">Português</span>
+                            <img src="./Images/flag_brasil_icon.png" class="language-icon" onclick="updateLanguage('pt')">&nbsp;
+                        </div>
+                        <div class="language-row">
+                            <span class="language-name" onclick="updateLanguage('en')">English</span>
+                            <img src="./Images/flag_united_kingdom_icon.png" class="language-icon" onclick="updateLanguage('en')">&nbsp;
+                        </div>
+                        <div class="language-row">
+                            <span class="language-name" onclick="updateLanguage('es')">Spanish</span>
+                            <img src="./Images/flag_mexico_icon.png" class="language-icon" onclick="updateLanguage('es')">&nbsp;
+                        </div>
+                        <div class="language-row">
+                            <span class="language-name" onclick="updateLanguage('fr')">French</span>
+                            <img src="./Images/flag_france_icon.png" class="language-icon" onclick="updateLanguage('fr')">&nbsp;
+                        </div>
+                      </div>
+                      <div id="content" style="width:auto; height:auto;"></div>                  
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    
+      </section>    
   <footer>
     <div class="vertical_cima_footer col"></div>
     <div class="footer-content">
