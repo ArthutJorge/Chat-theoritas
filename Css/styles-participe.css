@@ -36,9 +36,16 @@
     width: 120%;
     margin-bottom: 10%;
   }
+
+  .row{
+    display: flex;
+    justify-content: center;
+  }
   
-  .col{
-    width: 100%;
+  .idioma{
+    text-align: center;
+    width: calc(7vmax + 180px) !important;
+    justify-content: center;
   }
 
   .participe{
@@ -56,30 +63,33 @@
   }
 
 
-  #botões button, #botões a{
+  .botao, a{
     z-index: 99;
     transition: all 0.2s ease-in-out;
     color: black !important;
   }
 
-  #botões button{
+  .botao{
     background-color: yellow;
     outline: 5px solid black;
     border-right: 5px solid orange;
     border-bottom: 5px solid orange;
-    width: calc(5vmax + 50px);
+    width: calc(7vmax + 50px);
     font-size: calc(1.2vmax + 10px);
+    margin-bottom: 20px;
   }
 
-  #botões button:hover{
+  .botao:hover{
     scale: 1.05;
     color: red !important;
   }
 
-  #botões button:active{
+  .botao:active{
     scale: 0.95;
     color: blue !important;
   }
+
+/* RESPONSIVIDADE */
 
   @media (max-width: 800px){
     .participe{

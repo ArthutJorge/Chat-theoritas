@@ -1,67 +1,3 @@
-<style>
-  .language-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .language-row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
-  }
-  .language-icon {
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    margin-right: 8px;
-  }
-  .language-name {
-    text-align: left;
-    cursor: pointer;
-    color: white;
-  }
-  #content iframe {
-    width: 100%;
-    height: 500px;
-  }
-</style>
- <script>
-
-var translations = {
-      pt: {
-            sobreNos: "Sobre nós"
-      },
-      en: {
-           sobreNos: "About us"
-          },
-      es: {
-         sobreNos: "Sobre nosotros"
-      },
-      fr: {
-           sobreNos: "À propos de nous"
-      }
-    };
-
-  function updateLanguage(language) {
-    const languageNameElement = document.getElementById("language-name");
-    const sobreNosElement = document.getElementById("sobre-nos");
-   
-    if (sobreNosElement) {
-        sobreNosElement.textContent = translations[language].sobreNos;
-      }
-
-    if (languageNameElement) {
-      languageNameElement.textContent = translations[language][language];
-    }
-    const url = `sobre_${language}.html`;
-    document.getElementById("content").innerHTML = `<iframe src="${url}" frameborder="0" width="100%" height="100%"></iframe>`;
-  }
-  function onLoad() {
-    updateLanguage('pt');
-  }
-
-</script>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -132,23 +68,24 @@ var translations = {
                 <div class="col">
                   <h1 id="sobre-nos">Sobre nós</h1>
                       <div class="language-container">
-                        <div class="language-row">
-                            <span class="language-name" onclick="updateLanguage('pt')">Português</span>
-                            <img src="./Images/flag_brasil_icon.png" class="language-icon" onclick="updateLanguage('pt')">&nbsp;
-                        </div>
-                        <div class="language-row">
-                            <span class="language-name" onclick="updateLanguage('en')">English</span>
-                            <img src="./Images/flag_united_kingdom_icon.png" class="language-icon" onclick="updateLanguage('en')">&nbsp;
-                        </div>
-                        <div class="language-row">
-                            <span class="language-name" onclick="updateLanguage('es')">Spanish</span>
-                            <img src="./Images/flag_mexico_icon.png" class="language-icon" onclick="updateLanguage('es')">&nbsp;
-                        </div>
-                        <div class="language-row">
-                            <span class="language-name" onclick="updateLanguage('fr')">French</span>
-                            <img src="./Images/flag_france_icon.png" class="language-icon" onclick="updateLanguage('fr')">&nbsp;
-                        </div>
-                      </div>
+                        <div class="row">
+                          <div class="idioma">
+                              <img src="Images/flag_brasil_icon.png" width="48" height="48">
+                              <a href="javascript:void(0);" class="language-name"  onclick="updateLanguage('pt')">Português</a>
+                          </div>
+                          <div class="idioma">
+                              <img src="Images/flag_united_kingdom_icon.png" width="48" height="48">
+                              <a href="javascript:void(0);" class="language-name"  onclick="updateLanguage('en')"> English </a>
+                          </div>
+                          <div class="idioma">
+                              <img src="Images/flag_mexico_icon.png" width="48" height="48">
+                              <a href="javascript:void(0);"class="language-name"   onclick="updateLanguage('es')"> Spanish </a>
+                          </div>
+                          <div class="idioma">
+                              <img src="Images/flag_france_icon.png" width="48" height="48">
+                              <a href="javascript:void(0);"class="language-name"   onclick="updateLanguage('fr')"> Francés </a>
+                          </div>
+                      </div> <br>
                       <div id="content" style="width:auto; height:auto;"></div>                  
                 </div>
               </div>
@@ -175,5 +112,6 @@ var translations = {
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="./JavaScript/sobre.js"></script>
 </body>
 </html>

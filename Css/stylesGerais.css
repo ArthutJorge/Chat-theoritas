@@ -115,6 +115,10 @@ h1 {
   color: #1A1A1A;
 }
 
+iframe{
+  width: 100%;
+}
+
 /* FOOTER */
   
   footer{

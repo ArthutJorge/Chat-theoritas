@@ -24,7 +24,7 @@
 }
 
 .membros img{
-  width: calc(4vmax + 60px);
+  height: calc(3vmax + 60px);
 }
 h2{
   text-align: center;

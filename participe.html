@@ -1,85 +1,7 @@
-<!-- AJAX -->
-<script>
-  var translations = {
-        pt: {
-              participe: "Participe",
-              formText: "Form - Português"
-        },
-        en: {
-              participe: "Join us",
-              formText: "Form - English"
-            },
-        es: {
-              participe: "Participar",
-              formText: "Form - Spanish"
-        },
-        fr: {
-              participe: "Participer",
-              formText: "Form - Francés"
-        }
-      };
-    function updateLanguage(language) {
-      const languageNameElement = document.getElementById("language-name");
-      const participeElement = document.getElementById("participe");
-      if (participeElement) {
-          participeElement.textContent = translations[language].participe;
-        }
-      if (languageNameElement) {
-        languageNameElement.textContent = translations[language][language];
-      }
-      if (participeElement) {
-        participeElement.innerHTML = `<button class="botao" onclick="openForm('${translations[language].formUrl}')"  width="150" height="150" >${translations[language].formText}</button>`;
-        }
-           const url = `participe_${language}.html`;
-      document.getElementById("content").innerHTML = `<iframe src="${url}" frameborder="0" width=1200 height="800"></iframe>`;
-      document.getElementById("FormContent").innerHTML = participeElement.innerHTML ;
-    }
-    function onLoad() {
-      updateLanguage('pt');
-    }
-  
-    function openForm(url) {
-      window.open(url, "_blank");
-    }
-  </script>
-  <style>
-
-.botao{
-    background-color: #180ea1;
-    border: none;
-    color: #fff;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 8px;
-    animation: pulse 2s infinite;
-}
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.botao:hover {
-    animation: none;
-}
-
-
-  </style>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat Theoritas - Participe</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -135,21 +57,21 @@
           <h1 id="participe">Participe</h1>
           <div class="container">
               <div class="row">
-                  <div class="col">
+                  <div class="idioma">
                       <img src="Images/flag_brasil_icon.png" width="48" height="48">
                       <a href="javascript:void(0);" class="language-name"  onclick="updateLanguage('pt')">Português</a>
                   </div>
-                  <div class="col">
+                  <div class="idioma">
                       <img src="Images/flag_united_kingdom_icon.png" width="48" height="48">
-                      <a href="javascript:void(0);" class="language-name"  onclick="updateLanguage('en')">English</a>
+                      <a href="javascript:void(0);" class="language-name"  onclick="updateLanguage('en')"> English </a>
                   </div>
-                  <div class="col">
+                  <div class="idioma">
                       <img src="Images/flag_mexico_icon.png" width="48" height="48">
-                      <a href="javascript:void(0);"class="language-name"   onclick="updateLanguage('es')">Spanish</a>
+                      <a href="javascript:void(0);"class="language-name"   onclick="updateLanguage('es')"> Spanish </a>
                   </div>
-                  <div class="col">
+                  <div class="idioma">
                       <img src="Images/flag_france_icon.png" width="48" height="48">
-                      <a href="javascript:void(0);"class="language-name"   onclick="updateLanguage('fr')">Francés</a>
+                      <a href="javascript:void(0);"class="language-name"   onclick="updateLanguage('fr')"> Francés </a>
                   </div>
               </div>
           </div>
@@ -176,6 +98,8 @@
       </div><br>
       <h1 id="ct-conteudo" class="secret">The federation</h1></div>
     </footer>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="./JavaScript/participe.js"></script>
 </body>
 </html>
