@@ -18,6 +18,8 @@
   font-size: calc(1.5vmax + 10px);
 }
 
+.sobre
+
 /* sobre */
 
 .img-theoritas{
@@ -61,7 +63,7 @@
 
 .idioma{
   text-align: center;
-  width: calc(10vmax + 180px) !important;
+  width: calc(12vmax + 120px) !important;
   justify-content: center;
 }
 

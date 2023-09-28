@@ -70,12 +70,9 @@ a:hover::after{
 }
 
 .navbar-icon-texto{
-  font-size: calc(2.5vmax + 8px);
+  font-size: calc(2vmax + 8px);
+  align-self: center;
   z-index: 999;
-}
-
-.iconRight{
-  margin-left: 30px;
 }
 
 /* PADRÕES DE ESTILO */
@@ -122,7 +119,7 @@ iframe{
 /* FOOTER */
   
   footer{
-    margin-top: 15%;
+    margin-top: 14%;
   }
   
   .vertical_cima_footer{
@@ -143,7 +140,7 @@ iframe{
     height: 100px;
     margin: 5%;
     left: 0;
-    margin-top: calc(150px - 9vmax);
+    margin-top: -80px;
     width: -webkit-fill-available;
     position: absolute;
   }
@@ -186,11 +183,17 @@ iframe{
       text-transform: capitalize;
       margin-left: 0px !important;
   }
-  .nav-item, .nav-center{
+  .nav-center{
+    justify-content: center; 
+}
+
+.nav-item{
+    width: calc(20vmax + 250px);
     justify-content: center;
 }
-.Lg-theorytas, .logo-footer{
-  width: calc(15vmax + 80px);
+
+.Lg-theorytas{
+  width: calc(9vmax + 80px);
 }
 
   /* RESPONSIVIDADE */
@@ -203,6 +206,10 @@ iframe{
       .nav{
         display: grid !important;
         grid-template-columns: repeat(1, 2fr) !important;
+        justify-content: center;
+      }
+      .nav-item{
+        width: 100%;
       }
     }
 
