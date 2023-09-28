@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=VT323&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  
+  <link rel="shortcut icon" href="./Images/favicon.ico?"/>
 </head>
 
 <body class="bg p-5">
@@ -28,12 +28,12 @@
       <ul class="nav justify-content-center">
         <li class="nav-item d-flex">
           <a class="navbar-icon-texto" href="sobre.html">
-          <img src="./Images/test.png" class="iconnav">
-          SOBRE
+            &nbsp; &nbsp; <img src="./Images/test.png" class="iconnav">
+           SOBRE &nbsp; &nbsp;
         </a>
           <a class="navbar-icon-texto" href="arquivos.html">
             <img src="./Images/navicon.png" class="iconnav iconRight">
-            ARQUIVOS
+            ARQUIVOS &nbsp;
           </a>
         </li>
         <li class="nav-center d-flex">
@@ -46,8 +46,8 @@
             PARTICIPE
           </a>
           <a class="navbar-icon-texto" href="membros.html">
-            <img src="./Images/iconnavbar.png" class="iconnav iconRight">
-            MEMBROS
+            &nbsp; <img src="./Images/iconnavbar.png" class="iconnav iconRight">
+             MEMBROS &nbsp;
           </a>
         </li>
       </ul>
@@ -67,35 +67,53 @@
             <div class="sobre">
               <div class="img-theoritas"><img src="./Images/theoritas.png" width="340" alt="Theoritaslogo"></div>
                 <div class="col">
-                  <div class="vertical_cima col"></div>
-                      <h1>Sobre nós</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nemo earum eveniet enim iusto? Sunt repudiandae laborum.</p>
-                          <div class="vertical_baixo col"></div>
+                  <h1 id="sobre-nos">Sobre nós</h1>
+                      <div class="language-container">
+                        <div class="row">
+                          <div class="idioma">
+                              <img src="Images/flag_brasil_icon.png" width="48" height="48">
+                              <a href="javascript:void(0);" class="language-name"  onclick="updateLanguage('pt')">Português</a>
+                          </div>
+                          <div class="idioma">
+                              <img src="Images/flag_united_kingdom_icon.png" width="48" height="48">
+                              <a href="javascript:void(0);" class="language-name"  onclick="updateLanguage('en')"> English </a>
+                          </div>
+                          <div class="idioma">
+                              <img src="Images/flag_mexico_icon.png" width="48" height="48">
+                              <a href="javascript:void(0);"class="language-name"   onclick="updateLanguage('es')"> Spanish </a>
+                          </div>
+                          <div class="idioma">
+                              <img src="Images/flag_france_icon.png" width="48" height="48">
+                              <a href="javascript:void(0);"class="language-name"   onclick="updateLanguage('fr')"> Francés </a>
+                          </div>
+                      </div> <br>
+                      <div id="content" style="width:auto; height:auto;"></div>                  
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    
-  <footer>
-    <div class="vertical_cima_footer col"></div>
-    <div class="footer-content">
-      <h1>Chat Theoritas</h1>
-      <p>Um projeto da comunidade do Discord do Cellbit</p>
-      <ul class="socials">
-        <li><a href="#"><img src="./Images/discord.png" alt=""></a></li>
-        <li><a href="#"><img src="./Images/twittersite.png" alt=""></a></li>
-        <li><a href="#"><img src="./Images/celldisc.png" alt=""></a></li>
-      </ul><img class="logo-footer" src="./Images/theoritas.png" width="300" alt="Theoritas-footer">
-    </div>
-    
-    <div class="vertical_baixo_footer col"></div>
-    <div class="footer-bottom">
-      <p>copyright &copy;2023 Todos os direitos reservados.</p>
-    </div>
-  </footer>
+      </section>    
+      
+      <footer>
+        <div class="vertical_cima_footer col"></div>
+        <div class="footer-content">
+          <h1>Chat Theoritas</h1>
+          <p>Um projeto da comunidade do Discord do Cellbit</p>
+          <ul class="socials">
+            <li><a href="#"><img src="./Images/discord.png" alt=""></a></li>
+            <li><a href="#"><img src="./Images/twittersite.png" alt=""></a></li>
+            <li><a href="#"><img src="./Images/celldisc.png" alt=""></a></li> <br>
+          </ul>
+          <p>copyright &copy;2023 Todos os direitos reservados.</p>
+        </div>
+        
+        <div class="vertical_baixo_footer col"></div>
+        <div class="footer-bottom">
+        </div>
+      </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="./JavaScript/sobre.js"></script>
 </body>
 </html>
