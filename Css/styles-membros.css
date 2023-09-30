@@ -81,3 +81,9 @@ h2{
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
+@media (min-width: 901px){
+  .flip-card:active .flip-card-inner{
+    transform: rotateY(180deg);
+  }
+}

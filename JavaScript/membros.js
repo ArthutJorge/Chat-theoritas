@@ -3,7 +3,7 @@ imagemAnterior = ""
 body = document.body
 
 function ChangeClick(imagem){
-    if(window.matchMedia("(max-width: 500px)".matches)){
+    if(window.matchMedia("(max-width: 900px)".matches)){
         body.classList.remove("mobile");
         
         if(imagemAnterior == imagem && imagemAnterior != "" && contador < 2){
