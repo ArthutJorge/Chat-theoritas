@@ -210,6 +210,15 @@ iframe{
 
 .frame h1{
   font-size: calc(4vmax + 15px) !important;
+  color: powderblue;
+}
+
+.frame h2{
+  color: rgb(255, 255, 255);
+}
+
+.frame .azuj {
+  color: rgb(16, 191, 214);
 }
 
   /* RESPONSIVIDADE */

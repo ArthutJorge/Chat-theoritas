@@ -72,8 +72,9 @@ h2{
   transform: rotateY(180deg);
 }
 
-.flip-card:hover{
+.flip-card li:hover{
   animation: fadeIn 2s ease-in-out;
+  cursor: pointer;
 }
 
 @keyframes fadeIn {
