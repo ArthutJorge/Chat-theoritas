@@ -1,5 +1,4 @@
 
-let imagem = document.querySelectorAll('.imagem');
 contador = 1;
 imagemAnterior = ""
 body = document.body
