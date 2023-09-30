@@ -1,37 +1,18 @@
-<!-- AJAX -->
-
-<script>
-  function loadIframe(src, iframeId) {
-      // Oculta todos os iframes
-      var iframes = document.querySelectorAll('iframe');
-      iframes.forEach(function(iframe) {
-          iframe.style.display = 'none';
-      });
-
-      // Exibe o iframe selecionado
-      var iframe = document.getElementById(iframeId);
-      iframe.src = src;
-      iframe.style.display = 'block';
-  }
-</script>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat Theoritas - Participe</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="Css\styles-participe.css">
   <link rel="stylesheet" href="Css\stylesGerais.css">
-
- 
   <!--Font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=VT323&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  
+  <link rel="shortcut icon" href="./Images/favicon.ico?"/>
 </head>
-
 <body class="bg p-5">
   <!--Pré Loader-->
   <div class = "container-fluid loader_bg">
@@ -40,123 +21,93 @@
 
   <!--Cabeçalho-->
 
-  <section class="container-fluid ">
+    <section class="container-fluid ">
 
-    <div id ="nvbap">
-      <ul class="nav justify-content-center">
-        <li class="nav-item d-flex">
-          <a class="navbar-icon-texto" href="sobre.html">
-          <img src="./Images/test.png" class="iconnav">
-          SOBRE
-        </a>
-          <a class="navbar-icon-texto" href="arquivos.html">
-            <img src="./Images/navicon.png" class="iconnav iconRight">
-            ARQUIVOS
-          </a>
-        </li>
-        <li class="nav-center d-flex">
-          <a class="navbar-icon-texto" href="index.html">
-            <img src="./Images/theoritas.png" class="Lg-theorytas" ></a>
-        </li>
-        <li class="nav-item d-flex">
-          <a class="navbar-icon-texto" href="participe.html">
-            <img src="./Images/naviconid.png" class="iconnav">
-            PARTICIPE
-          </a>
-          <a class="navbar-icon-texto" href="membros.html">
-            <img src="./Images/iconnavbar.png" class="iconnav iconRight">
-            MEMBROS
-          </a>
-        </li>
-      </ul>
-    </div>
+        <div id ="nvbap">
+          <ul class="nav justify-content-center">
+            <li class="nav-item d-flex">
+              <a class="navbar-icon-texto" href="sobre.html">
+                &nbsp; &nbsp; <img src="./Images/test.png" class="iconnav">
+               SOBRE &nbsp; &nbsp;
+            </a>
+              <a class="navbar-icon-texto" href="arquivos.html">
+                <img src="./Images/navicon.png" class="iconnav iconRight">
+                ARQUIVOS &nbsp;
+              </a>
+            </li>
+            <li class="nav-center d-flex">
+              <a class="navbar-icon-texto" href="index.html">
+                <img src="./Images/theoritas.png" class="Lg-theorytas" ></a>
+            </li>
+            <li class="nav-item d-flex">
+              <a class="navbar-icon-texto" href="participe.html">
+                <img src="./Images/naviconid.png" class="iconnav">
+                PARTICIPE
+              </a>
+              <a class="navbar-icon-texto" href="membros.html">
+                &nbsp; <img src="./Images/iconnavbar.png" class="iconnav iconRight">
+                 MEMBROS &nbsp;
+              </a>
+            </li>
+          </ul>
+        </div>
+    
+      </section>
 
-  </section>
-  <br>
+      <br>
 
-<!-- Conteúdo -->
+  <!-- Conteúdo -->
+  
 <section id="conteudosec" class="container">
   <div class="row">
       <div class="col" id="conteudo1">
           <!-- Conteúdo Site dentro de site -->
+          <h1 id="participe">Participe</h1>
           <div class="container">
               <div class="row">
-                  <div class="col">
-                      <img src="Images/Google-Translate-icon.png" width="48" height="48">
-                      <a href="javascript:void(0);" onclick="loadIframe('participe_pt.html', 'iframe_pt')">Português</a>
+                  <div class="idioma">
+                      <img src="Images/flag_brasil_icon.png" width="48" height="48">
+                      <a href="javascript:void(0);" class="language-name"  onclick="updateLanguage('pt')">Português</a>
                   </div>
-                  <div class="col">
-                      <img src="Images/Google-Translate-icon.png" width="48" height="48">
-                      <a href="javascript:void(0);" onclick="loadIframe('participe_en.html', 'iframe_en')">English</a>
+                  <div class="idioma">
+                      <img src="Images/flag_united_kingdom_icon.png" width="48" height="48">
+                      <a href="javascript:void(0);" class="language-name"  onclick="updateLanguage('en')"> English </a>
                   </div>
-                  <div class="col">
-                      <img src="Images/Google-Translate-icon.png" width="48" height="48">
-                      <a href="javascript:void(0);" onclick="loadIframe('participe_es.html', 'iframe_es')">Spanish</a>
+                  <div class="idioma">
+                      <img src="Images/flag_mexico_icon.png" width="48" height="48">
+                      <a href="javascript:void(0);"class="language-name"   onclick="updateLanguage('es')"> Spanish </a>
                   </div>
-                  <div class="col">
-                      <img src="Images/Google-Translate-icon.png" width="48" height="48">
-                      <a href="javascript:void(0);" onclick="loadIframe('participe_fr.html', 'iframe_fr')">Francês</a>
+                  <div class="idioma">
+                      <img src="Images/flag_france_icon.png" width="48" height="48">
+                      <a href="javascript:void(0);"class="language-name"   onclick="updateLanguage('fr')"> Francés </a>
                   </div>
               </div>
           </div>
+          <hr>
           <!-- Conteúdo Site dentro de site Chamada do AJAX -->
-          <iframe name="iframe_pt" id="iframe_pt" width="100%" height="800px" style="display: none;"></iframe>
-          <iframe name="iframe_en" id="iframe_en" width="100%" height="800px" style="display: none;"></iframe>
-          <iframe name="iframe_es" id="iframe_es" width="100%" height="800px" style="display: none;"></iframe>
-          <iframe name="iframe_fr" id="iframe_fr" width="100%" height="800px" style="display: none;"></iframe>
+          <div id="content" style="width:auto ;height:800"></div> 
       </div>
   </div>
-  
-  <div class="IconsBand">
-      <div class="coluna">
-          <a href="https://forms.gle/YTyn8VSSECP728qD" target="_blank">
-              <img src="./Images/flag_brasil_icon.png" width="64" height="64" alt="Form - Português">
-              <p>Form - Português</p>
-          </a>
-      </div>
-      <div class="coluna">
-          <a href="https://forms.gle/yLPedujnU61TCSx98" target="_blank">
-              <img src="./Images/flag_united_kingdom_icon.png" width="64" height="64" alt="Form - English">
-              <p>Form - English</p>
-          </a>
-      </div>
-      <div class="coluna">
-          <a href="https://forms.gle/59iVNysjcV2xTA2Y7" target="_blank">
-              <img src="./Images/flag_mexico_icon.png" width="64" height="64" alt="Form - Spanish">
-              <p>Form - Spanish</p>
-          </a>
-      </div>
-      <div class="coluna">
-          <a href="https://docs.google.com/forms/d/1Rt_VSLblypf659zAtqu8DtzcRD66WCiraWfiPbNcDDA/" target="_blank">
-              <img src="./Images/flag_france_icon.png" width="64" height="64" alt="Form - Francés">
-              <p>Form - Francés</p>
-          </a>
-      </div>
-  </div>
-  
-
 </section>
-
-  <footer>
-
-      <div class="vertical_cima_footer col"></div>
-      <div class="footer-content">
-        <h1>Chat Theoritas</h1>
-        <p>Um projeto da comunidade do Discord do Cellbit</p>
-        <ul class="socials">
-          <li><a href="#"><img src="./Images/discord.png" alt=""></a></li>
-          <li><a href="#"><img src="./Images/twittersite.png" alt=""></a></li>
-          <li><a href="#"><img src="./Images/celldisc.png" alt=""></a></li>
-        </ul><img class="logo-footer" src="./Images/theoritas.png" width="300" alt="Theoritas-footer">
-      </div>
-      
-      <div class="vertical_baixo_footer col"></div>
-      <div class="footer-bottom">
-        <p>copyright &copy;2023 Todos os direitos reservados.</p>
-      </div><br>
-      <h1 id="ct-conteudo" class="secret">The federation</h1></div>
-    </footer>
-
-
-   
+<footer>
+  <div class="vertical_cima_footer col"></div>
+  <div class="footer-content">
+    <h1>Chat Theoritas</h1>
+    <p>Um projeto da comunidade do Discord do Cellbit</p>
+    <ul class="socials">
+      <li><a href="#"><img src="./Images/discord.png" alt=""></a></li>
+      <li><a href="#"><img src="./Images/twittersite.png" alt=""></a></li>
+      <li><a href="#"><img src="./Images/celldisc.png" alt=""></a></li> <br>
+    </ul>
+    <p>copyright &copy;2023 Todos os direitos reservados.</p>
+  </div>
   
+  <div class="vertical_baixo_footer col"></div>
+  <div class="footer-bottom">
+  </div>
+</footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="./JavaScript/participe.js"></script>
+</body>
+</html>

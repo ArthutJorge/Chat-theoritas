@@ -34,6 +34,10 @@
   color: white !important;
 }
 
+.card-body:hover{
+  border: 1px solid red !important;
+}
+
 .carousel-control-next-icon, .carousel-control-prev-icon{
   transition: all 0.55s ease-in-out;
 }

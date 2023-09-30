@@ -6,8 +6,8 @@
   color: white;
   display: flex;
 }
+
 .arcos1, .arcos2, .arcos3, .arcos4{
-  text-align: center;
   margin: auto;
   margin-bottom: 5%;
 }
@@ -17,6 +17,11 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: calc(5% + 20px);
+  gap: 2vmax;
+}
+
+.arcos a{
+  font-size: calc(1.5vmax + 10px);
 }
 
 .arcos h1{
@@ -28,12 +33,12 @@
   margin: 10px 0px;
 }
 
-#imgArco:hover{
-  content: url("../Images/arcoaberto.png");
-}
-
 #imgArco{
   content: url("../Images/arcofechado.png");
+}
+
+a:hover > #imgArco, #imgArco:hover{
+  content: url("../Images/arcoaberto.png");
 }
 
 @media screen and (max-width: 780px) {

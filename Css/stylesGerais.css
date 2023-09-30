@@ -29,7 +29,7 @@
   font-size: 35px;
   font-family: 'VT323', monospace;
   border: rgb(255, 255, 255);
-  background-color: #1A1A1A;
+  background-color: #1A1A1A !important;
 }
 
 /*
@@ -112,9 +112,6 @@ h1 {
   color: #1A1A1A;
 }
 
-iframe{
-  width: 100%;
-}
 
 /* FOOTER */
   
@@ -194,6 +191,25 @@ iframe{
 
 .Lg-theorytas{
   width: calc(9vmax + 80px);
+}
+
+/* FRAME */
+
+iframe{
+  width: 100%;
+}
+
+.frame{
+  margin-top: 3vmax !important;
+  padding: 0 !important;
+}
+
+.frame p{
+  font-size: calc(2vmax + 10px) !important;
+}
+
+.frame h1{
+  font-size: calc(4vmax + 15px) !important;
 }
 
   /* RESPONSIVIDADE */

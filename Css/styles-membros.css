@@ -19,6 +19,8 @@
 .membros1, .membros2, .membros3, .membros4, .membros5, .membros6{
   justify-content: center;
   padding-top: 4rem; padding-bottom: 4rem;
+  gap: 1vmax;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
 }
