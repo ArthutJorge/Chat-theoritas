@@ -19,7 +19,6 @@ function ChangeClick(imagem){
             contador = 1
         }
         imagemAnterior = imagem
-        event.stopPropagation();
 
 }
 }
