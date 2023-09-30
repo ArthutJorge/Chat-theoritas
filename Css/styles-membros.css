@@ -52,7 +52,7 @@ h2{
   transform-style: preserve-3d;
 }
 
-.flip-card:active .flip-card-inner {
+.flip-card:active .flip-card-inner, .mobile .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 

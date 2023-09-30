@@ -227,7 +227,7 @@ iframe{
     text-align: center;
   }
 
-  @media (max-width: 1170px){
+  @media (max-width: 1210px){
       .nav{
         display: grid !important;
         grid-template-columns: repeat(1, 2fr) !important;
