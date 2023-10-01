@@ -1,12 +1,13 @@
+window.onresize = function() {
+    removerClasses()
+}
+
 contador = 1;
 imagemAnterior = "a"
 
-function ChangeClick(imagem){
+let ChangeClick = (imagem) =>{
     if(window.matchMedia("(max-width: 900px)".matches)){
         card = document.querySelector(`.a${imagem}`)
-        cardAnterior = document.querySelector(`.a${imagemAnterior}`)
-
-        cardAnterior.classList.remove("mobile");
         
         if(imagemAnterior == imagem && imagemAnterior != "" && contador < 2){
             contador += 1
@@ -18,6 +19,14 @@ function ChangeClick(imagem){
         }
         imagemAnterior = imagem
         event.stopPropagation();
+}
+}
 
+let removerClasses = () =>{
+    Cards = document.querySelectorAll(".flip-card-inner")
+
+    Cards.forEach((card) => {
+        card.classList.remove('mobile');
+      });
 }
-}
+
