@@ -27,7 +27,9 @@ function updateLanguage(language) {
   }
   const url = `sobre_${language}.html`;
   document.getElementById("content").innerHTML = `<iframe src="./Content/${url}" frameborder="0" width="100%" height="100%"></iframe>`;
+  localStorage.setItem("language", `${language}`);
 }
-function onLoad() {
-  updateLanguage('pt');
+
+window.onload = function() {
+  updateLanguage(localStorage.getItem("language"));
 }

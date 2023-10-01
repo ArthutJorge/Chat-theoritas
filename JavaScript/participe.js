@@ -32,11 +32,12 @@ function updateLanguage(language) {
   if (participeElement) {
     participeElement.innerHTML = `<button class="botao" onclick="openForm('${translations[language].link}')"  width="150" height="150" >${translations[language].formText}</button>`;
     }
-       const url = `participe_${language}.html`;
-  document.getElementById("content").innerHTML = `<iframe src="./Content/${url}" frameborder="0" width=1200 height="800"></iframe>`;
+      const url = `participe_${language}.html`;
+      document.getElementById("content").innerHTML = `<iframe src="./Content/${url}" frameborder="0" width=1200 height="800"></iframe>`;
+      localStorage.setItem("language", `${language}`);
 }
-function onLoad() {
-  updateLanguage('pt');
+window.onload = function() {
+  updateLanguage(localStorage.getItem("language"));
 }
 
 function openForm(url) {
