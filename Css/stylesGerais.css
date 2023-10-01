@@ -240,7 +240,6 @@ iframe{
   cursor: pointer;
   z-index: 99;
   border: 3px solid transparent;
-  height: calc(4vmax + 30px);
   display: flex;
 }
 

@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=VT323&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="./Images/favicon.ico?"/>
+  <script src="./JavaScript/avoidFlickering.js"></script>
 </head>
 
 <body class="bg p-5" onclick="removerClasses()">
@@ -148,6 +149,14 @@
               <div class="membros3">
 
                 <div class="flip-card">
+                  <div  onclick="ChangeClick(21)" class="flip-card-inner a9">
+                    <div class="flip-card-front">
+                      <li><img loading="lazy" src='./Images/Giu.png' onmouseover="this.src='./Images/PlaceHolderFrontCard.png';" onmouseout="this.src='./Images/Giu.png';removerClasses()" /></li><a href="#"><h2>giukat</h2></a>
+                    </div>
+                      <div class="flip-card-back"> <img loading="lazy" src="./Images/placeHolderBackCard.png"> <h2>giukat</h2>
+                    </div></div></div>
+
+                <div class="flip-card">
                   <div  onclick="ChangeClick(9)" class="flip-card-inner a9">
                     <div class="flip-card-front">
                       <li><img loading="lazy" src='./Images/theo.png' onmouseover="this.src='./Images/PlaceHolderFrontCard.png';" onmouseout="this.src='./Images/theo.png';removerClasses()" /></li><a href="#"><h2>cheese</h2></a>
@@ -266,7 +275,7 @@
     
     <!--Botão troca de tema-->
     <div class="temaButton">
-      <img src="./Images/ritas.png" id="imgTema" onclick="trocarTema('membros')">
+      <img src="./Images/ritas.png" id="imgTema" onclick="trocarTema('membros.html')">
     </div>
 
   <footer>

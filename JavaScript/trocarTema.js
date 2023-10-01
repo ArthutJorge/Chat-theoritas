@@ -1,8 +1,22 @@
-const imagemOriginal = document.getElementById('imgTema').getAttribute('src');
+button = document.getElementById('imgTema');
+imagemOriginal = document.getElementById('imgTema').getAttribute('src');
 
-let trocarTema = (pagina)  =>{
+darkMode = localStorage.getItem("dark-mode"); 
+
+if (darkMode === "disabled") {
+    button.src = imagemOriginal
+} else {
+    button.src = "./Images/theo.png"
+}
+
+var path = window.location.pathname;
+var page = path.split("/").pop();
+trocarTema(page)
+
+function trocarTema(pagina){
 
         let button = document.getElementById('imgTema');
+
         let navbar = document.querySelector('#membros');
         let logo = document.querySelector('.Lg-theorytas')
         let logo2 = document.querySelector('#logo2')
@@ -17,13 +31,14 @@ let trocarTema = (pagina)  =>{
             logo.src = "./Images/lightIcon.png";
             button.src = "./Images/theo.png";
 
-            if(pagina == "index"){
+            if(pagina == "index.html"){
                 carrosselButtonPrev.style = "filter: invert(100%)";
                 carrosselButtonNext.style = "filter: invert(100%)";
                 }
-            if(pagina == "sobre"){
+            if(pagina == "sobre.html"){
                 logo2.src = "./Images/lightIcon.png";
             }
+            localStorage.setItem("dark-mode", "disabled");
 
         } else {
             document.documentElement.style.setProperty('--dark-shades', '#1A1A1A');
@@ -33,12 +48,14 @@ let trocarTema = (pagina)  =>{
             logo.src = "./Images/theoritas.png";
             button.src = imagemOriginal;
 
-            if(pagina == "index"){
+            if(pagina == "index.html"){
                 carrosselButtonPrev.style = "filter: invert(-100%)";
                 carrosselButtonNext.style = "filter: invert(-100%)";
             }
-            if(pagina == "sobre"){
+            if(pagina == "sobre.html"){
                     logo2.src = "./Images/theoritas.png";
                 }
+            
+        localStorage.setItem("dark-mode", "enabled");
         }
     }
