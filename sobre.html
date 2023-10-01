@@ -20,9 +20,9 @@
       <div class = "loader"></div>
   </div>
 
-  <!--Cabeçalho-->
+   <!--Cabeçalho-->
 
-  <section class="container-fluid ">
+   <section class="container-fluid ">
 
     <div id ="nvbap">
       <ul class="nav justify-content-center">
@@ -46,7 +46,7 @@
             PARTICIPE
           </a>
           <a class="navbar-icon-texto" href="membros.html">
-            &nbsp; <img src="./Images/iconnavbar.png" class="iconnav iconRight">
+            &nbsp; <img src="./Images/iconnavbar.png" id="membros" class="iconnav iconRight">
              MEMBROS &nbsp;
           </a>
         </li>
@@ -65,7 +65,7 @@
         <div class="col" id="conteudo1">
           <div class="container-fluid row-inline gap-5">
             <div class="sobre">
-              <div class="img-theoritas"><img src="./Images/theoritas.png" width="340" alt="Theoritaslogo"></div>
+              <div class="img-theoritas"><img src="./Images/theoritas.png" id="logo2" width="340" alt="Theoritaslogo"></div>
                 <div class="col">
                   <h1 id="sobre-nos">Sobre nós</h1>
                       <div class="language-container">
@@ -95,6 +95,11 @@
         </div>
       </section>    
       
+  <!--Botão troca de tema-->
+  <div class="temaButton">
+    <img src="./Images/ritas.png" id="imgTema" onclick="trocarTema('sobre')">
+  </div>
+
       <footer>
         <div class="vertical_cima_footer col"></div>
         <div class="footer-content">
@@ -115,5 +120,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <script src="./JavaScript/sobre.js"></script>
+  <script src="./JavaScript/trocarTema.js"></script>
 </body>
 </html>

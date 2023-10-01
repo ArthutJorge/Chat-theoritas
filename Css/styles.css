@@ -1,22 +1,16 @@
-/* NAV BAR */
+:root{
+  --light-shades: white;
+  --dark-shades: #1A1A1A;
+  --black: black;
+}
 
 #btnapear{
   display: none;
 }
 
 .dropcolor{
-  background-color: #1A1A1A;
+  background-color: var(--dark-shades);
 }
-
-/* .nav-item{
-  margin: 100px 20px;
-} */
-
-/* .nav-item{
-  margin: 6rem 1rem;
-} */
-
-
 
 
 /* CARROSSEL */
@@ -31,7 +25,15 @@
   background-image: url("../Images/ArcoBagi.png");
   background-size: cover;
   background-position: center center;
+  color: var(--light-shades) !important;
+}
+
+.card-body p{
   color: white !important;
+}
+
+#inicio{
+  border: 0.2px dashed var(--light-shades) !important;
 }
 
 .card-body:hover{

@@ -1,8 +1,14 @@
+:root{
+  --light-shades: white;
+  --dark-shades: #1A1A1A;
+  --black: black;
+}
+
 /* ARCOS */
 
 .cargo{
   padding: 0;
-  color: white;
+  color: var(--light-shades);
   text-align: center;
   font-size: calc(2vmax + 8px);
 }
@@ -17,7 +23,7 @@
 }
 
 .membros1, .membros2, .membros3, .membros4, .membros5, .membros6{
-  color: white;
+  color: var(--light-shades);
   justify-content: center;
   padding-top: 4rem; padding-bottom: 4rem;
   gap: 1vmax;
@@ -65,7 +71,7 @@ h2{
 }
 
 .flip-card-front {
-  color: black;
+  color: var(--black);
 }
 
 .flip-card-back {

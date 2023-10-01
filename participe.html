@@ -21,42 +21,42 @@
 
   <!--Cabeçalho-->
 
-    <section class="container-fluid ">
+  <section class="container-fluid ">
 
-        <div id ="nvbap">
-          <ul class="nav justify-content-center">
-            <li class="nav-item d-flex">
-              <a class="navbar-icon-texto" href="sobre.html">
-                &nbsp; &nbsp; <img src="./Images/test.png" class="iconnav">
-               SOBRE &nbsp; &nbsp;
-            </a>
-              <a class="navbar-icon-texto" href="arquivos.html">
-                <img src="./Images/navicon.png" class="iconnav iconRight">
-                ARQUIVOS &nbsp;
-              </a>
-            </li>
-            <li class="nav-center d-flex">
-              <a class="navbar-icon-texto" href="index.html">
-                <img src="./Images/theoritas.png" class="Lg-theorytas" ></a>
-            </li>
-            <li class="nav-item d-flex">
-              <a class="navbar-icon-texto" href="participe.html">
-                <img src="./Images/naviconid.png" class="iconnav">
-                PARTICIPE
-              </a>
-              <a class="navbar-icon-texto" href="membros.html">
-                &nbsp; <img src="./Images/iconnavbar.png" class="iconnav iconRight">
-                 MEMBROS &nbsp;
-              </a>
-            </li>
-          </ul>
-        </div>
-    
-      </section>
+    <div id ="nvbap">
+      <ul class="nav justify-content-center">
+        <li class="nav-item d-flex">
+          <a class="navbar-icon-texto" href="sobre.html">
+            &nbsp; &nbsp; <img src="./Images/test.png" class="iconnav">
+           SOBRE &nbsp; &nbsp;
+        </a>
+          <a class="navbar-icon-texto" href="arquivos.html">
+            <img src="./Images/navicon.png" class="iconnav iconRight">
+            ARQUIVOS &nbsp;
+          </a>
+        </li>
+        <li class="nav-center d-flex">
+          <a class="navbar-icon-texto" href="index.html">
+            <img src="./Images/theoritas.png" class="Lg-theorytas" ></a>
+        </li>
+        <li class="nav-item d-flex">
+          <a class="navbar-icon-texto" href="participe.html">
+            <img src="./Images/naviconid.png" class="iconnav">
+            PARTICIPE
+          </a>
+          <a class="navbar-icon-texto" href="membros.html">
+            &nbsp; <img src="./Images/iconnavbar.png" id="membros" class="iconnav iconRight">
+             MEMBROS &nbsp;
+          </a>
+        </li>
+      </ul>
+    </div>
 
-      <br>
+  </section>
 
-  <!-- Conteúdo -->
+  <br>
+
+<!-- Conteúdo -->
   
 <section id="conteudosec" class="container">
   <div class="row">
@@ -89,6 +89,12 @@
       </div>
   </div>
 </section>
+
+  <!--Botão troca de tema-->
+  <div class="temaButton">
+    <img src="./Images/ritas.png" id="imgTema" onclick="trocarTema('participe')">
+  </div>
+
 <footer>
   <div class="vertical_cima_footer col"></div>
   <div class="footer-content">
@@ -109,5 +115,6 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="./JavaScript/participe.js"></script>
+    <script src="./JavaScript/trocarTema.js"></script>
 </body>
 </html>

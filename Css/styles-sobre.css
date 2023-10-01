@@ -1,10 +1,10 @@
-/* CONTEUDO */
-
-/*
-.container-fluid{
+:root{
+  --light-shades: white;
+  --dark-shades: #1A1A1A;
+  --black: black;
 }
-*/
 
+/* CONTEUDO */
 
 .sobre h1 {
   width: 100%;
@@ -30,17 +30,17 @@
   width: calc(17vmax + 100px) !important;
 }
 .vertical_cima{
-  border-right: 7px solid rgb(255, 255, 255);
-  border-left: 7px solid rgb(255, 255, 255);
-  border-top: 7px solid rgb(255, 255, 255);
+  border-right: 7px solid var(--light-shades);
+  border-left: 7px solid var(--light-shades);
+  border-top: 7px solid var(--light-shades);
   height: calc(3vmax + 40px);
   width:120%;
   margin-top: 10%;
 }
 .vertical_baixo{
-  border-right: 7px solid rgb(255, 255, 255);
-  border-left: 7px solid rgb(255, 255, 255);
-  border-bottom: 7px solid rgb(255, 255, 255);
+  border-right: 7px solid var(--light-shades);
+  border-left: 7px solid var(--light-shades);
+  border-bottom: 7px solid var(--light-shades);
   height: calc(3vmax + 40px);
   width: 120%;
   margin-bottom: 10%;

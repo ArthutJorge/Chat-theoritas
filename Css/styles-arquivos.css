@@ -17,7 +17,7 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: calc(5% + 20px);
-  gap: 2vmax;
+  gap: 7vmax;
 }
 
 .arcos a{

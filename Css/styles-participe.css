@@ -1,10 +1,10 @@
- /* CONTEUDO */
-  
- /*
-  .container-fluid{
-  }
-  */
-  
+:root{
+  --light-shades: white;
+  --dark-shades: #1A1A1A;
+  --black: black;
+}
+
+/* CONTEUDO */ 
 
   .participe h1 {
     width: 100%;
@@ -21,17 +21,17 @@
   /* participe */
   
   .vertical_cima{
-    border-right: 7px solid rgb(255, 255, 255);
-    border-left: 7px solid rgb(255, 255, 255);
-    border-top: 7px solid rgb(255, 255, 255);
+    border-right: 7px solid var(--light-shades);
+    border-left: 7px solid var(--light-shades);
+    border-top: 7px solid var(--light-shades);
     height: calc(3vmax + 40px);
     width:120%;
     margin-top: 10%;
   }
   .vertical_baixo{
-    border-right: 7px solid rgb(255, 255, 255);
-    border-left: 7px solid rgb(255, 255, 255);
-    border-bottom: 7px solid rgb(255, 255, 255);
+    border-right: 7px solid var(--light-shades);
+    border-left: 7px solid var(--light-shades);
+    border-bottom: 7px solid var(--light-shades);
     height: calc(3vmax + 40px);
     width: 120%;
     margin-bottom: 10%;
@@ -66,7 +66,7 @@
   .botao, a{
     z-index: 99;
     transition: all 0.2s ease-in-out;
-    color: black !important;
+    color: var(--black) !important;
   }
 
   .botao{

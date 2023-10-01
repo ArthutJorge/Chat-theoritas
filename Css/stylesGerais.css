@@ -1,6 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=VT323&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+  --light-shades: white;
+  --dark-shades: #1A1A1A;
+  --black: black;
+}
 
 
 /*Styles Extras TCN*/
@@ -16,7 +21,7 @@
 
 /* Estilo padrão para links */
 .IconsBand a {
-    color: black; /* Cor do texto padrão */
+    color: var(--black); /* Cor do texto padrão */
     text-decoration: none; /* Remove sublinhado */
 }
 
@@ -28,8 +33,8 @@
 .bg{
   font-size: 35px;
   font-family: 'VT323', monospace;
-  border: rgb(255, 255, 255);
-  background-color: #1A1A1A !important;
+  border: var(--light-shades);
+  background-color: var(--dark-shades) !important;
 }
 
 /*
@@ -49,11 +54,11 @@
 
 /* NAV BAR */
 a{
-  color: white !important;
+  color: var(--light-shades) !important;
 }
 a:link {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: var(--light-shades);
 }
 a:hover
 {
@@ -61,7 +66,7 @@ a:hover
 }
 
 a:hover::after{
-  color: white;
+  color: var(--light-shades);
 }
 
 .iconnav{
@@ -70,6 +75,7 @@ a:hover::after{
 }
 
 .navbar-icon-texto{
+  color: var(--light-shades) !important;
   font-size: calc(2vmax + 8px);
   align-self: center;
   z-index: 999;
@@ -78,30 +84,30 @@ a:hover::after{
 /* PADRÕES DE ESTILO */
 
 p{
-  color: white;
+  color: var(--light-shades);
   margin-left: 15px;
 }
 
 strong {
-  color: white;
+  color: var(--light-shades);
   margin-left: 15px;
 }
 h1 {
   font-size: calc(2vmax + 25px);
-  color: white;
+  color: var(--light-shades);
   text-align: center;
   margin: auto;
 }
 
 #conteudosec{
-  border: 9px dashed white;
+  border: 9px dashed var(--light-shades);
 }
 
 #ct-conteudo{
   margin-top: -45px;
   width: 22vmax;
   justify-content: center;
-  background-color: #1A1A1A;
+  background-color: var(--dark-shades);
 }
 
 .p-5{
@@ -109,7 +115,7 @@ h1 {
 }
 
 .secret{
-  color: #1A1A1A;
+  color: var(--dark-shades);
 }
 
 
@@ -117,12 +123,13 @@ h1 {
   
   footer{
     margin-top: 14%;
+    color: var(--light-shades) !important;
   }
   
   .vertical_cima_footer{
-    border-right: 7px solid rgb(255, 255, 255);
-    border-left: 7px solid rgb(255, 255, 255);
-    border-top: 7px solid rgb(255, 255, 255);
+    border-right: 7px solid var(--light-shades);
+    border-left: 7px solid var(--light-shades);
+    border-top: 7px solid var(--light-shades);
     height: 100px;
     margin: 5%;
     left: 0;
@@ -131,9 +138,9 @@ h1 {
     position: absolute;
   }
   .vertical_baixo_footer{
-    border-right: 7px solid rgb(255, 255, 255);
-    border-left: 7px solid rgb(255, 255, 255);
-    border-bottom: 7px solid rgb(255, 255, 255);
+    border-right: 7px solid var(--light-shades);
+    border-left: 7px solid var(--light-shades);
+    border-bottom: 7px solid var(--light-shades);
     height: 100px;
     margin: 5%;
     left: 0;
@@ -145,7 +152,7 @@ h1 {
   footer{
       width: 100%;
       padding-top: 40px;
-      color: #fff;
+      color: var(--light-shades);
   }
   .footer-content{
       display: flex;
@@ -219,6 +226,35 @@ iframe{
 
 .frame .azuj {
   color: rgb(16, 191, 214);
+}
+
+/* BOTÃO TROCA DE TEMA */
+
+.temaButton{
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  background: var(--light-shades);
+  border-radius: 20px;
+  transition: all 0.55s ease-in-out;
+  cursor: pointer;
+  z-index: 99;
+  border: 3px solid transparent;
+  height: calc(4vmax + 30px);
+  display: flex;
+}
+
+.temaButton img{
+  width: calc(4vmax + 30px);
+}
+
+.temaButton:hover{
+  scale: 1.1;
+  border-color: red;
+}
+
+.temaButton:active{
+  scale:0.9
 }
 
   /* RESPONSIVIDADE */
