@@ -30,6 +30,7 @@
 
 .card-body p{
   color: white !important;
+  font-size: calc(1.5vmax + 17px);
 }
 
 #inicio{
@@ -42,10 +43,12 @@
 
 .carousel-control-next-icon, .carousel-control-prev-icon{
   transition: all 0.55s ease-in-out;
+  position: absolute;
 }
 
 .carousel-control-next:hover .carousel-control-next-icon, .carousel-control-prev:hover  .carousel-control-prev-icon{
   scale: 1.4;
+  opacity: 1;
 }
 
 .carousel-inner .carousel-item.active,
@@ -68,7 +71,12 @@
   .card-body{
     width: 60vw;
   }
-}
+  .carousel-control-next{
+    margin: 30px;
+  }
+  .carousel-control-prev{
+    margin: 22px;
+}}
 
 @media (min-width: 768px) {
   .carousel-inner .carousel-item-right.active,

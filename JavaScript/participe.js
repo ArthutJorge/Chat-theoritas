@@ -33,7 +33,7 @@ function updateLanguage(language) {
     participeElement.innerHTML = `<button class="botao" onclick="openForm('${translations[language].link}')"  width="150" height="150" >${translations[language].formText}</button>`;
     }
       const url = `participe_${language}.html`;
-      document.getElementById("content").innerHTML = `<iframe src="./Content/${url}" frameborder="0" width=1200 height="800"></iframe>`;
+      document.getElementById("content").innerHTML = `<iframe class="frame" src="./Content/${url}" frameborder="0" width=1200 height="800"></iframe>`;
       localStorage.setItem("language", `${language}`);
 }
 window.onload = function() {

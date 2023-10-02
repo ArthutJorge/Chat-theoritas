@@ -26,7 +26,7 @@ function updateLanguage(language) {
     languageNameElement.textContent = translations[language][language];
   }
   const url = `sobre_${language}.html`;
-  document.getElementById("content").innerHTML = `<iframe src="./Content/${url}" frameborder="0" width="100%" height="100%"></iframe>`;
+  document.getElementById("content").innerHTML = `<iframe class="frame" src="./Content/${url}" frameborder="0" width="100%" height="100%"></iframe>`;
   localStorage.setItem("language", `${language}`);
 }
 

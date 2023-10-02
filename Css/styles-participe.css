@@ -70,6 +70,7 @@
   }
 
   .botao{
+    color: black !important;
     background-color: yellow;
     outline: 5px solid black;
     border-right: 5px solid orange;

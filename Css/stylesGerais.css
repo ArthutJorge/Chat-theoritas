@@ -89,7 +89,6 @@ p{
 }
 
 strong {
-  color: var(--light-shades);
   margin-left: 15px;
 }
 h1 {
@@ -209,19 +208,21 @@ iframe{
 .frame{
   margin-top: 3vmax !important;
   padding: 0 !important;
+  background-color: transparent !important;
 }
 
 .frame p{
   font-size: calc(2vmax + 10px) !important;
+  color: gray !important;
+}
+
+.frame strong, .frame h2{
+  color: rgb(70, 70, 200) !important;
 }
 
 .frame h1{
   font-size: calc(4vmax + 15px) !important;
-  color: powderblue;
-}
-
-.frame h2{
-  color: rgb(255, 255, 255);
+  color: rgb(122, 161, 191);
 }
 
 .frame .azuj {

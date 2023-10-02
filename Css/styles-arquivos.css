@@ -1,9 +1,13 @@
+:root{
+  --light-shades: white;
+}
+
 /* ARCOS */
 
 .arcos-idioma{
   padding: 0;
   width: calc(190px - 2vmax);
-  color: white;
+  color: var(--light-shades);
   display: flex;
 }
 
