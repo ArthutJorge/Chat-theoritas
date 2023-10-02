@@ -212,7 +212,7 @@ iframe{
 }
 
 .frame p{
-  font-size: calc(2vmax + 10px) !important;
+  font-size: calc(2vmax + 5px) !important;
   color: gray !important;
 }
 
@@ -220,8 +220,12 @@ iframe{
   color: rgb(70, 70, 200) !important;
 }
 
+.frame strong{
+  font-size: calc(2vmax + 6px);
+}
+
 .frame h1{
-  font-size: calc(4vmax + 15px) !important;
+  font-size: 4vmax !important;
   color: rgb(122, 161, 191);
 }
 
@@ -277,5 +281,12 @@ iframe{
   @media (max-width: 400px){
     .nav-center{
       width: 100vw;
+    }
+    .p-5{
+      padding: 1.5rem !important;
+    }
+    .frame .container-fluid, .frame {
+      margin: 0 !important;
+      padding: 0 !important;
     }
   }

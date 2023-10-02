@@ -10,7 +10,8 @@
   padding: 0;
   color: var(--light-shades);
   text-align: center;
-  font-size: calc(2vmax + 8px);
+  font-size: calc(2vmax + 12px);
+  font-weight: 900;
 }
 
 #conteudosec{
@@ -25,7 +26,7 @@
 .membros1, .membros2, .membros3, .membros4, .membros5, .membros6{
   color: var(--light-shades);
   justify-content: center;
-  padding-top: 4rem; padding-bottom: 4rem;
+  padding-bottom: 4rem;
   gap: 1vmax;
   text-align: center;
   display: flex;
@@ -79,7 +80,7 @@ h2{
 }
 
 .flip-card li:hover{
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
   cursor: pointer;
 }
 
