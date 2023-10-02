@@ -6,7 +6,7 @@ contador = 1;
 imagemAnterior = "a"
 
 let ChangeClick = (imagem) =>{
-    if(window.matchMedia("(max-width: 900px)".matches)){
+    if(window. innerWidth<=900){
         card = document.querySelector(`.a${imagem}`)
         
         if(imagemAnterior == imagem && imagemAnterior != "" && contador < 2){
