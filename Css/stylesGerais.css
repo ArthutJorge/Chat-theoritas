@@ -70,13 +70,13 @@ a:hover::after{
 }
 
 .iconnav{
-  width: calc(3.5vmax + 8px);
+  width: calc(2vmax + 10px);
   z-index: 999;
 }
 
 .navbar-icon-texto{
   color: var(--light-shades) !important;
-  font-size: calc(2vmax + 8px);
+  font-size: calc(2vmax + 7px);
   align-self: center;
   z-index: 999;
 }
@@ -110,7 +110,7 @@ h1 {
 }
 
 .p-5{
-  padding: 2rem !important;
+  padding: 5rem !important;
 }
 
 .secret{
@@ -196,7 +196,7 @@ h1 {
 }
 
 .Lg-theorytas{
-  width: calc(9vmax + 80px);
+  width: calc(6vmax + 60px);
 }
 
 /* FRAME */
@@ -267,7 +267,7 @@ iframe{
     text-align: center;
   }
 
-  @media (max-width: 1280px){
+  @media (max-width: 1100px){
       .nav{
         display: grid !important;
         grid-template-columns: repeat(1, 2fr) !important;

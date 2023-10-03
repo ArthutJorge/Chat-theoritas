@@ -20,7 +20,7 @@
 }
 
 .card-body{
-  height: 500px;
+  height: calc(10vmin + 280px);
   margin-right: 10px;
   background-image: url("../Images/ArcoBagi.png");
   background-size: cover;
