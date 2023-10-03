@@ -251,6 +251,7 @@ iframe{
 
 .temaButton img{
   width: calc(4vmax + 30px);
+  border-radius: 20px;
 }
 
 .temaButton:hover{
