@@ -200,6 +200,10 @@ h1 {
   width: calc(6vmax + 60px);
 }
 
+.Light-theme .Lg-theorytas, .Light-theme #logo2{
+  content: url("../Images/lightIcon.png")
+}
+
 /* FRAME */
 
 iframe{

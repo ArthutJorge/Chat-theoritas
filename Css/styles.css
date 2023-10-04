@@ -16,12 +16,11 @@
   padding-bottom: 5%;
 }
 
-
 /* CARROSSEL */
 
 .carousel{
   padding: 5%;
-  padding-bottom: 0%;
+  padding-bottom: 1%;
 }
 
 .card-body{
@@ -49,6 +48,10 @@
 .carousel-control-next-icon, .carousel-control-prev-icon{
   transition: all 0.55s ease-in-out;
   position: absolute;
+}
+
+.Light-theme .carousel-control-next-icon, .Light-theme .carousel-control-prev-icon{
+  filter: invert(100%);
 }
 
 .carousel-control-next:hover .carousel-control-next-icon, .carousel-control-prev:hover  .carousel-control-prev-icon{
