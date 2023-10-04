@@ -13,14 +13,13 @@
 }
 
 .row{
-  padding-bottom: 5%;
+  padding-top: 1%;
 }
 
 /* CARROSSEL */
 
 .carousel{
   padding: 5%;
-  padding-bottom: 1%;
 }
 
 .card-body{
