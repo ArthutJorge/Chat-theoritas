@@ -70,30 +70,6 @@
 /* language */
 
 
-.language-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.language-row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
-}
-.language-icon {
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    margin-right: 8px;
-}
-.language-name {
-    text-align: left;
-    cursor: pointer;
-    color: white;
-}
-#content{
-  width: 100% !important;
-}
 #content iframe {
     height: 500px;
 }
