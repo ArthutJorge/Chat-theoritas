@@ -29,7 +29,7 @@ function trocarTema(pagina){
             document.documentElement.style.setProperty('--black', 'white');
             navbar.style = "filter: invert(100%)";
             logo.src = "./Images/lightIcon.png";
-            button.src = "./Images/CucuruchoDark.png";
+            button.src = "./Images/DarkCucurucho.png";
 
             if(pagina == "index.html"){
                 carrosselButtonPrev.style = "filter: invert(100%)";
