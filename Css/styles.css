@@ -12,11 +12,16 @@
   background-color: var(--dark-shades);
 }
 
+.row{
+  padding-bottom: 5%;
+}
+
 
 /* CARROSSEL */
 
 .carousel{
   padding: 5%;
+  padding-bottom: 0%;
 }
 
 .card-body{
